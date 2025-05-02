@@ -6,7 +6,7 @@ const Button = ({
   ...rest
 }) => {
   const base =
-    "inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-medium transition-colors duration-200";
+    "inline-flex items-center justify-center px-5 py-2 rounded-xl text-[13px] transition-colors duration-200";
 
   const variants = {
     primary: "bg-[#1202b0] text-white hover:bg-[#0f029a]",
