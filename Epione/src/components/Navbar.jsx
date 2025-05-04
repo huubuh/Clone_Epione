@@ -1,4 +1,3 @@
-// src/components/NavBar.jsx
 import { useEffect, useState } from "react";
 import Logo from "../assets/images/Logo.avif";
 import { Link, NavLink } from "react-router-dom";
@@ -9,9 +8,9 @@ import {
 } from "@ant-design/icons";
 
 const navItems = [
-  { label: "Ghế công thái học", path: "/chairs" },
-  { label: "Bàn Epione", path: "/desks" },
-  { label: "Phụ kiện", path: "/accessories" },
+  { label: "Ghế công thái học", path: "/products/chairs" },
+  { label: "Bàn Epione", path: "/products/desks" },
+  { label: "Phụ kiện", path: "/products/accessories" },
 ];
 
 const NavBar = () => {

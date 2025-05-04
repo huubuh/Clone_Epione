@@ -1,0 +1,215 @@
+{
+  "chairs": [
+    {
+      "id": 1,
+      "slug": "fortischair",
+      "name": "Ghế công thái học Epione FortisChair",
+      "price": 3590000,
+      "image": "/assets/images/chair/ghe-cong-thai-hoc-epione-fortischair-293838.webp",
+      "rating": 5,
+      "quantity": 10
+    },
+    {
+      "id": 2,
+      "slug": "elyschair",
+      "name": "Ghế công thái học Epione ElysChair",
+      "price": 2390000,
+      "image": "/assets/images/chair/ghe-cong-thai-hoc-epione-elyschair-125084.webp",
+      "rating": 5,
+      "quantity": 10
+    },
+    {
+      "id": 3,
+      "slug": "easychair-20",
+      "name": "Ghế công thái học Epione EasyChair 2.0",
+      "price": 6690000,
+      "image": "/assets/images/chair/ghe-cong-thai-hoc-epione-easychair-20-582610.webp",
+      "rating": 5,
+      "quantity": 10
+    },
+    {
+      "id": 4,
+      "slug": "fortischair-20",
+      "name": "Ghế công thái học Epione FortisChair 2.0",
+      "price": 4590000,
+      "image": "/assets/images/chair/ghe-cong-thai-hoc-epione-fortischair-2-black-pro-front.webp",
+      "rating": 5,
+      "quantity": 10
+    },
+    {
+      "id": 5,
+      "slug": "aliuschair",
+      "name": "Ghế công thái học Epione AliusChair",
+      "price": 13990000,
+      "image": "/assets/images/chair/ghe-cong-thai-hoc-epione-aliuschair-6d-all-black-front.webp",
+      "rating": 5,
+      "quantity": 10
+    }
+  ],
+  "desks": [
+    {
+      "id": 101,
+      "slug": "smartdesk-mono",
+      "name": "Bàn nâng hạ Epione SmartDesk Mono",
+      "price": 3990000,
+      "image": "/assets/images/desk/epione-smartdesk-mono-white-corner.webp",
+      "rating": 0,
+      "quantity": 10
+    },
+    {
+      "id": 102,
+      "slug": "smartdesk-lite-20",
+      "name": "Bàn nâng hạ Epione SmartDesk Lite 2.0",
+      "price": 5990000,
+      "image": "/assets/images/desk/smartdesk-lite-2.0-corner-white.webp",
+      "rating": 5,
+      "quantity": 10
+    },
+    {
+      "id": 103,
+      "slug": "smartdesk-pro-20",
+      "name": "Bàn nâng hạ Epione SmartDesk Pro 2.0",
+      "price": 8690000,
+      "image": "/assets/images/desk/smartdesk-pro-2.0-corner-white.webp",
+      "rating": 5,
+      "quantity": 10
+    },
+    {
+      "id": 104,
+      "slug": "delightdesk",
+      "name": "Bàn nâng hạ Epione DelightDesk",
+      "price": 10590000,
+      "image": "/assets/images/desk/7-ban-nang-ha-epione-delightdesk-side-right-oak.webp",
+      "rating": 5,
+      "quantity": 10
+    },
+    {
+      "id": 105,
+      "slug": "smartdesk-frame",
+      "name": "Khung bàn nâng hạ Epione SmartDesk",
+      "price": 4990000,
+      "image": "/assets/images/desk/khung-ban-nang-ha-epione-smartdesk-904753.webp",
+      "rating": 0,
+      "quantity": 10
+    }
+  ],
+  "accessories": [
+    {
+      "id": 201,
+      "slug": "deskcasters",
+      "name": "Bánh xe bàn nâng hạ Epione DeskCasters",
+      "price": 390000,
+      "image": "/assets/images/accessories/banh-xe-ban-nang-ha-epione-deskcasters-134411.webp",
+      "rating": 0,
+      "quantity": 0
+    },
+    {
+      "id": 202,
+      "slug": "cabletray",
+      "name": "Khay đi dây Epione CableTray",
+      "price": 219000,
+      "image": "/assets/images/accessories/khay-di-day-epione-cabletray-126309.webp",
+      "rating": 0,
+      "quantity": 0
+    },
+    {
+      "id": 203,
+      "slug": "essentials-arm",
+      "name": "Giá đỡ màn hình Epione Essentials Arm",
+      "price": 790000,
+      "image": "/assets/images/accessories/tay-nang-man-hinh-epione-essentials-arm-453546.webp",
+      "rating": 5,
+      "quantity": 10
+    },
+    {
+      "id": 204,
+      "slug": "cpuholder",
+      "name": "Giá đỡ máy tính Epione CPUHolder",
+      "price": 890000,
+      "image": "/assets/images/accessories/gia-do-may-tinh-gan-ban-epione-cpuholder-574633.webp",
+      "rating": 0,
+      "quantity": 0
+    },
+    {
+      "id": 205,
+      "slug": "delight-arm",
+      "name": "Giá đỡ màn hình Epione Delight Arm",
+      "price": 2290000,
+      "image": "/assets/images/accessories/delight-arm.webp",
+      "rating": 0,
+      "quantity": 10
+    },
+    {
+      "id": 206,
+      "slug": "monitor-stand-20",
+      "name": "Kệ màn hình Epione MonitorStand 2.0",
+      "price": 869000,
+      "image": "/assets/images/accessories/epione-monitorstand-2-walnut-117.webp",
+      "rating": 5,
+      "quantity": 10
+    },
+    {
+      "id": 207,
+      "slug": "essentials-pad",
+      "name": "Tấm lót bàn Epione Essentials Pad",
+      "price": 790000,
+      "image": "/assets/images/accessories/tam-lot-ban-epione-essentials-pad-213616.webp",
+      "rating": 0,
+      "quantity": 10
+    },
+    {
+      "id": 208,
+      "slug": "ergo-ease",
+      "name": "Kê chân công thái học Epione ErgoEase",
+      "price": 490000,
+      "image": "/assets/images/accessories/ke-chan-cong-thai-hoc-epione-ergoease-202823.webp",
+      "rating": 5,
+      "quantity": 10
+    },
+    {
+      "id": 209,
+      "slug": "cabinet-w400",
+      "name": "Tủ Epione Essentials Cabinet W400",
+      "price": 2190000,
+      "image": "/assets/images/accessories/tu-van-phong-epione-essentials-lip-edge-cabinet-w400-730879.webp",
+      "rating": 0,
+      "quantity": 10
+    },
+    {
+      "id": 210,
+      "slug": "flexback",
+      "name": "Tựa lưng công thái học Epione FlexBack",
+      "price": 950000,
+      "image": "/assets/images/accessories/tua-lung-epione-flexback-corner-angle-front.webp",
+      "rating": 5,
+      "quantity": 10
+    },
+    {
+      "id": 211,
+      "slug": "footrest",
+      "name": "Kê chân ghế",
+      "price": 390000,
+      "image": "/assets/images/accessories/ke-chan-ghe-500097.webp",
+      "rating": 5,
+      "quantity": 10
+    },
+    {
+      "id": 212,
+      "slug": "flexishelf",
+      "name": "Kệ đa năng Epione Essentials Flexi Shelf",
+      "price": 1800000,
+      "image": "/assets/images/accessories/ke-da-nang-epione-essentials-flexi-shelf-789790.webp",
+      "rating": 0,
+      "quantity": 10
+    },
+    {
+      "id": 213,
+      "slug": "cabinet-w350",
+      "name": "Tủ Epione Essentials Cabinet W350",
+      "price": 1400000,
+      "image": "/assets/images/accessories/tu-epione-essential-cabinet-w350-squint.webp",
+      "rating": 0,
+      "quantity": 10
+    }
+  ]
+}
