@@ -1,52 +1,88 @@
-import axios from 'axios';
+import axios from "axios";
 
-const API_URL = 'http://localhost:3000';
+const API_URL = "http://localhost:3000";
 
+// Lấy danh sách sản phẩm bán chạy nhất
 export const getBestSellers = async () => {
   try {
-    // Fetch all products from different categories
-    const [chairsResponse, desksResponse, accessoriesResponse] = await Promise.all([
+    const [chairsRes, desksRes, accessoriesRes] = await Promise.all([
       axios.get(`${API_URL}/chairs`),
       axios.get(`${API_URL}/desks`),
-      axios.get(`${API_URL}/accessories`)
+      axios.get(`${API_URL}/accessories`),
     ]);
 
-    // Combine all products
     const allProducts = [
-      ...chairsResponse.data,
-      ...desksResponse.data,
-      ...accessoriesResponse.data
+      ...chairsRes.data,
+      ...desksRes.data,
+      ...accessoriesRes.data,
     ];
 
-    // Filter products with rating 5
-    const bestSellers = allProducts.filter(product => product.rating === 5);
-    
-    // Return top 5 best sellers
-    return bestSellers.slice(0, 5);
+    const bestSellers = allProducts.filter((product) => product.rating === 5);
+    return bestSellers.slice(0, 5); 
   } catch (error) {
-    console.error('Error fetching best sellers:', error);
+    console.error("Không thể lấy danh sách sản phẩm bán chạy:", error.message);
     return [];
   }
 };
 
+// Lấy sản phẩm theo danh mục (chairs, desks, accessories)
 export const getProductsByCategory = async (category) => {
   try {
-    // Map the category from URL to the correct endpoint
-    const endpointMap = {
-      'chairs': 'chairs',
-      'desks': 'desks',
-      'accessories': 'accessories'
-    };
-    
-    const endpoint = endpointMap[category];
-    if (!endpoint) {
-      throw new Error('Invalid category');
+    const validCategories = ["chairs", "desks", "accessories"];
+    if (!validCategories.includes(category)) {
+      throw new Error("Danh mục không hợp lệ.");
     }
 
-    const response = await axios.get(`${API_URL}/${endpoint}`);
+    const response = await axios.get(`${API_URL}/${category}`);
     return response.data;
   } catch (error) {
-    console.error(`Error fetching ${category}:`, error);
+    console.error(`Không thể lấy dữ liệu cho danh mục '${category}':`, error.message);
     return [];
   }
-}; 
+};
+
+// Lấy chi tiết sản phẩm theo slug
+export const getProductBySlug = async (slug) => {
+  try {
+    const [chairs, desks, accessories] = await Promise.all([
+      axios.get(`${API_URL}/chairs`),
+      axios.get(`${API_URL}/desks`),
+      axios.get(`${API_URL}/accessories`),
+    ]);
+
+    const allProducts = [
+      ...chairs.data,
+      ...desks.data,
+      ...accessories.data,
+    ];
+
+    const product = allProducts.find((item) => item.slug === slug);
+    if (!product) {
+      console.warn(`Không tìm thấy sản phẩm với slug: ${slug}`);
+    }
+    return product || null;
+  } catch (error) {
+    console.error("Không thể lấy thông tin chi tiết sản phẩm:", error.message);
+    return null;
+  }
+};
+
+
+export const getCategoryCounts = async () => {
+  try {
+    const [chairs, desks, accessories] = await Promise.all([
+      axios.get(`${API_URL}/chairs`),
+      axios.get(`${API_URL}/desks`),
+      axios.get(`${API_URL}/accessories`),
+    ]);
+
+    return {
+      chairs: chairs.data.length,
+      desks: desks.data.length,
+      accessories: accessories.data.length,
+    };
+  } catch (error) {
+    console.error("Không thể lấy dữ liệu danh mục:", error.message);
+    throw new Error("Không thể tải dữ liệu danh mục");
+  }
+};

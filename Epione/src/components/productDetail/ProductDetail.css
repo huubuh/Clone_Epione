@@ -1,0 +1,26 @@
+.img-swiper .swiper-button-next,
+.img-swiper .swiper-button-prev {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid #1106a7; 
+  color: #1106a7;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  z-index: 10;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.img-swiper .swiper-button-next::after,
+.img-swiper .swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: semi-bold;   
+}
+

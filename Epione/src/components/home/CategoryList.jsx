@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 
 import chairImg from "../../assets/images/collection-ghe-cong-thai-hoc.webp";
 import deskImg from "../../assets/images/collection-ban-nang-ha.webp";
 import accessoriesImg from "../../assets/images/collection-phu-kien-setup.webp";
-
-const API = "http://localhost:3000"; // base của JSON-Server
+import { getCategoryCounts } from "../../services/productService";
 
 const CategoryList = () => {
   /* state lưu số lượng */
@@ -14,22 +12,19 @@ const CategoryList = () => {
   const [loading, setLoad] = useState(true);
   const [error, setError] = useState(null);
 
-  /* gọi API một lần khi mount */
   useEffect(() => {
-    Promise.all([
-      axios.get(`${API}/chairs`),
-      axios.get(`${API}/desks`),
-      axios.get(`${API}/accessories`),
-    ])
-      .then(([chairs, desks, accessories]) =>
-        setCount({
-          chairs: chairs.data.length,
-          desks: desks.data.length,
-          accessories: accessories.data.length,
-        })
-      )
-      .catch(() => setError("Không lấy được dữ liệu danh mục"))
-      .finally(() => setLoad(false));
+    const fetchCounts = async () => {
+      try {
+        const data = await getCategoryCounts();
+        setCount(data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoad(false);
+      }
+    };
+
+    fetchCounts();
   }, []);
 
   /* cấu hình danh mục */
@@ -38,19 +33,19 @@ const CategoryList = () => {
       key: "chairs",
       title: "Ghế công thái học",
       image: chairImg,
-      path: "/products/chairs",
+      path: "/collections/chairs",
     },
     {
       key: "desks",
       title: "Bàn nâng hạ",
       image: deskImg,
-      path: "/products/desks",
+      path: "/collections/desks",
     },
     {
       key: "accessories",
       title: "Phụ kiện setup",
       image: accessoriesImg,
-      path: "/products/accessories",
+      path: "/collections/accessories",
     },
   ];
 

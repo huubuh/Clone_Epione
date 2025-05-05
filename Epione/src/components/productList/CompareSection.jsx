@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
-import ElysChair from "../../assets/images/chair/ghe-cong-thai-hoc-epione-elyschair-125084.webp";
-import FortisChair20 from "../../assets/images/chair/ghe-cong-thai-hoc-epione-fortischair-2-black-pro-front.webp";
-import EasyChair20 from "../../assets/images/chair/ghe-cong-thai-hoc-epione-easychair-20-582610.webp";
-import AliusChair from "../../assets/images/chair/ghe-cong-thai-hoc-epione-aliuschair-6d-all-black-front.webp";
-import SmartDeskMono from "../../assets/images/desk/epione-smartdesk-mono-white-corner.webp";
-import SmartDeskLite20 from "../../assets/images/desk/smartdesk-lite-2.0-corner-white.webp";
-import SmartDeskPro20 from "../../assets/images/desk/smartdesk-pro-2.0-corner-white.webp";
-import DelightDesk from "../../assets/images/desk/7-ban-nang-ha-epione-delightdesk-side-right-oak.webp";
+import ElysChair from "../../assets/images/chair/ElysChair/ghe-cong-thai-hoc-epione-elyschair-125084.webp";
+import FortisChair20 from "../../assets/images/chair/FortisChair20/ghe-cong-thai-hoc-epione-fortischair-2-black-pro-front.webp";
+import EasyChair20 from "../../assets/images/chair/EasyChair20/ghe-cong-thai-hoc-epione-easychair-20-582610.webp";
+import AliusChair from "../../assets/images/chair/AliusChair/ghe-cong-thai-hoc-epione-aliuschair-6d-all-black-front.webp";
+import SmartDeskMono from "../../assets/images/desk/SmartDeskMono/epione-smartdesk-mono-white-corner.webp";
+import SmartDeskLite20 from "../../assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-corner-white.webp";
+import SmartDeskPro20 from "../../assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-corner-white.webp";
+import DelightDesk from "../../assets/images/desk/DelightDesk/7-ban-nang-ha-epione-delightdesk-side-right-oak.webp";
 
 import SsElyChair from "../../assets/images/chair/so-sanh-ghe-cong-thai-hoc-elyschair.webp";
 import SsFortisChair20 from "../../assets/images/chair/so-sanh-ghe-cong-thai-hoc-fortischair-2_e380a3d1-9462-409f-8726-b466fc96bab0.webp";

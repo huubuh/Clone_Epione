@@ -12,6 +12,13 @@ const ProductList = ({ type }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
+        const validCategories = ["chairs", "desks", "accessories"];
+        if (!validCategories.includes(type)) {
+          throw new Error(
+            "Danh mục không hợp lệ. Vui lòng chọn danh mục phù hợp (chairs, desks, accessories)."
+          );
+        }
+
         const data = await getProductsByCategory(type);
         setProducts(data);
       } catch (error) {

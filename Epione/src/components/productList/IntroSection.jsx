@@ -42,7 +42,7 @@ const IntroSection = ({ type }) => {
             src={`${introContent.video}?autoplay=1`}
             title={`${introContent.title} Video`}
             className=" w-full h-full rounded-xl shadow-md" // Đảm bảo lấp đầy container
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="autoplay; encrypted-media; picture-in-picture"
             allowFullScreen
           />
         ) : (

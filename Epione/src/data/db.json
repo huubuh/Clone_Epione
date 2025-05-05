@@ -4,46 +4,199 @@
       "id": 1,
       "slug": "fortischair",
       "name": "Ghế công thái học Epione FortisChair",
-      "price": 3590000,
-      "image": "/assets/images/chair/ghe-cong-thai-hoc-epione-fortischair-293838.webp",
+      "price": 3890000, 
+      "image": "/assets/images/chair/FortisChair/ghe-cong-thai-hoc-epione-fortischair-293838.webp",
+      "images": [ 
+          "/assets/images/chair/FortisChair/ghe-cong-thai-hoc-epione-fortischair-293838.webp",
+          "/assets/images/chair/FortisChair/ghe-cong-thai-hoc-epione-fortischair-484427.webp",
+          "/assets/images/chair/FortisChair/ghe-cong-thai-hoc-epione-fortischair-708862.webp",
+          "/assets/images/chair/FortisChair/ghe-cong-thai-hoc-epione-fortischair-363663.webp"
+          
+      ],
       "rating": 5,
-      "quantity": 10
+      "quantity": 10 
+      
     },
     {
       "id": 2,
       "slug": "elyschair",
       "name": "Ghế công thái học Epione ElysChair",
-      "price": 2390000,
-      "image": "/assets/images/chair/ghe-cong-thai-hoc-epione-elyschair-125084.webp",
-      "rating": 5,
-      "quantity": 10
+      "price": 2590000, 
+      "image": "/assets/images/chair/ElysChair/ghe-cong-thai-hoc-epione-elyschair-125084.webp", 
+      "variants": [
+        {
+          "style": "không kê đầu",
+          "color": "All Black",
+          "price": 2590000,
+          "images": [
+            "/assets/images/chair/ElysChair/ghe-cong-thai-hoc-epione-elyschair-726309.webp", 
+            "/assets/images/chair/ElysChair/ghe-cong-thai-hoc-epione-elyschair-559517.webp",
+            "/assets/images/chair/ElysChair/ghe-cong-thai-hoc-epione-elyschair-310441.webp"
+          ],
+          "quantity": 5
+        },
+        {
+          "style": "không kê đầu",
+          "color": "Cool Gray",
+          "price": 2890000,
+          "images": [
+            "/assets/images/chair/ElysChair/ghe-cong-thai-hoc-epione-elyschair-343958.webp"
+         ],
+          "quantity": 3
+        },
+        {
+          "style": "có kê đầu",
+          "color": "All Black",
+          "price": 2890000,
+          "images": [
+            "/assets/images/chair/ElysChair/ghe-cong-thai-hoc-epione-elyschair-125084.webp", 
+            "/assets/images/chair/ElysChair/ghe-cong-thai-hoc-epione-elyschair-252905.webp",
+            "/assets/images/chair/ElysChair/ghe-cong-thai-hoc-epione-elyschair-372777.webp"
+          ],
+          "quantity": 4
+        },
+        {
+          "style": "có kê đầu",
+          "color": "Cool Gray",
+          "price": 3190000,
+          "images": [
+            "/assets/images/chair/ElysChair/ghe-cong-thai-hoc-epione-elyschair-450212.webp", 
+            "/assets/images/chair/ElysChair/ghe-cong-thai-hoc-epione-elyschair-989396.webp",
+            "/assets/images/chair/ElysChair/ghe-cong-thai-hoc-epione-elyschair-343958.webp",
+            "/assets/images/chair/ElysChair/ghe-cong-thai-hoc-epione-elyschair-737197.webp"
+          ],
+          "quantity": 2
+        }
+      ]
     },
     {
       "id": 3,
       "slug": "easychair-20",
       "name": "Ghế công thái học Epione EasyChair 2.0",
       "price": 6690000,
-      "image": "/assets/images/chair/ghe-cong-thai-hoc-epione-easychair-20-582610.webp",
+      "image": "/assets/images/chair/EasyChair20/ghe-cong-thai-hoc-epione-easychair-20-582610.webp",
       "rating": 5,
-      "quantity": 10
+      
+      "variants": [
+        {
+          "color": "All Black", 
+          "price": 6690000,
+          "images": [
+            "/assets/images/chair/EasyChair20/ghe-cong-thai-hoc-epione-easychair-20-582610.webp",
+            "/assets/images/chair/EasyChair20/ghe-cong-thai-hoc-epione-easychair-20-939503.webp",
+            "/assets/images/chair/EasyChair20/ghe-cong-thai-hoc-epione-easychair-20-413003.webp",
+            "/assets/images/chair/EasyChair20/ghe-cong-thai-hoc-epione-easychair-20-842059.webp"
+         ],
+          "quantity": 6
+        },
+        {
+          "color": "Cool Gray",
+          "price": 7090000,
+          "images": [
+            "/assets/images/chair/EasyChair20/ghe-cong-thai-hoc-epione-easychair-2-cool-grey-front.webp",
+            "/assets/images/chair/EasyChair20/ghe-cong-thai-hoc-epione-easychair-2-cool-grey-right.webp",
+            "/assets/images/chair/EasyChair20/ghe-cong-thai-hoc-epione-easychair-2-cool-grey-left.webp",
+            "/assets/images/chair/EasyChair20/ghe-cong-thai-hoc-epione-easychair-2-cool-grey-back.webp"
+          ],
+          "quantity": 4
+        }
+      ]
     },
     {
       "id": 4,
       "slug": "fortischair-20",
       "name": "Ghế công thái học Epione FortisChair 2.0",
       "price": 4590000,
-      "image": "/assets/images/chair/ghe-cong-thai-hoc-epione-fortischair-2-black-pro-front.webp",
+      "image": "/assets/images/chair/FortisChair20/ghe-cong-thai-hoc-epione-fortischair-2-black-pro-front.webp", 
       "rating": 5,
-      "quantity": 10
+   
+      "variants": [
+        {
+          "version": "bản thường",
+          "color": "All Black",
+          "price": 4590000,
+          "images": [
+            "/assets/images/chair/FortisChair20/ghe-cong-thai-hoc-epione-fortischair-2-black-base-front.webp",
+            "/assets/images/chair/FortisChair20/ghe-cong-thai-hoc-epione-fortischair-2-black-base-side.webp",
+            "/assets/images/chair/FortisChair20/ghe-cong-thai-hoc-epione-fortischair-2-black-base-corner.webp",
+            "/assets/images/chair/FortisChair20/ghe-cong-thai-hoc-epione-fortischair-2-black-base-back.webp"
+            
+          ],
+          "quantity": 3
+        },
+        {
+          "version": "bản thường",
+          "color": "Cool Gray",
+          "price": 5290000,
+          "images": [
+             "/assets/images/chair/FortisChair20/ghe-cong-thai-hoc-epione-fortischair-2-gray-pro-front.webp"
+     
+          ],
+          "quantity": 0
+        },
+        {
+          "version": "bản pro",
+          "color": "All Black",
+          "price": 5990000,
+          "images": [
+            "/assets/images/chair/FortisChair20/ghe-cong-thai-hoc-epione-fortischair-2-black-pro-front.webp",
+             "/assets/images/chair/FortisChair20/ghe-cong-thai-hoc-epione-fortischair-2-black-pro-side.webp",
+            "/assets/images/chair/FortisChair20/ghe-cong-thai-hoc-epione-fortischair-2-black-pro-corner.webp",
+            "/assets/images/chair/FortisChair20/ghe-cong-thai-hoc-epione-fortischair-2-black-pro-back.webp"
+         ],
+          "quantity": 3
+        },
+        {
+          "version": "bản pro",
+          "color": "Cool Gray",
+          "price": 6690000,
+          "images": [
+            "/assets/images/chair/FortisChair20/ghe-cong-thai-hoc-epione-fortischair-2-gray-pro-front.webp",
+            "/assets/images/chair/FortisChair20/ghe-cong-thai-hoc-epione-fortischair-2-gray-pro-side.webp",
+            "/assets/images/chair/FortisChair20/ghe-cong-thai-hoc-epione-fortischair-2-gray-pro-corner.webp",
+            "/assets/images/chair/FortisChair20/ghe-cong-thai-hoc-epione-fortischair-2-gray-pro-nga-lung.webp",
+            "/assets/images/chair/FortisChair20/ghe-cong-thai-hoc-epione-fortischair-2-gray-pro-back.webp"
+
+         ],
+          "quantity": 2
+        }
+      ]
     },
     {
       "id": 5,
       "slug": "aliuschair",
       "name": "Ghế công thái học Epione AliusChair",
       "price": 13990000,
-      "image": "/assets/images/chair/ghe-cong-thai-hoc-epione-aliuschair-6d-all-black-front.webp",
+      "image": "/assets/images/chair/AliusChair/ghe-cong-thai-hoc-epione-aliuschair-6d-all-black-front.webp",
       "rating": 5,
-      "quantity": 10
+
+      "variants": [
+        {
+          "style": "Kê tay 5D", 
+          "color": "All Black",
+          "price": 13990000,
+          "images": [
+            "/assets/images/chair/AliusChair/ghe-cong-thai-hoc-epione-aliuschair-6d-all-black-front.webp",
+            "/assets/images/chair/AliusChair/ghe-cong-thai-hoc-epione-aliuschair-6d-all-black-side.webp",
+            "/assets/images/chair/AliusChair/ghe-cong-thai-hoc-epione-aliuschair-6d-all-black-corner.webp",
+            "/assets/images/chair/AliusChair/ghe-cong-thai-hoc-epione-aliuschair-6d-all-black-back.webp"
+          ],
+          "quantity": 5
+        },
+        {
+          "style": "Kê tay 5D",
+          "color": "Cool Gray",
+          "price": 14490000,
+          "images": [
+            "/assets/images/chair/AliusChair/ghe-cong-thai-hoc-epione-aliuschair-6d-cool-gray-front.webp",
+            "/assets/images/chair/AliusChair/ghe-cong-thai-hoc-epione-aliuschair-6d-cool-gray-side.webp",
+            "/assets/images/chair/AliusChair/gghe-cong-thai-hoc-epione-aliuschair-6d-cool-gray-corner.webp",
+            "/assets/images/chair/AliusChair/ghe-cong-thai-hoc-epione-aliuschair-6d-cool-gray-back.webp"
+         ],
+          "quantity": 5
+        }
+     
+      ]
     }
   ],
   "desks": [
@@ -52,45 +205,388 @@
       "slug": "smartdesk-mono",
       "name": "Bàn nâng hạ Epione SmartDesk Mono",
       "price": 3990000,
-      "image": "/assets/images/desk/epione-smartdesk-mono-white-corner.webp",
+      "image": "/assets/images/desk/SmartDeskMono/epione-smartdesk-mono-white-corner.webp",
       "rating": 0,
-      "quantity": 10
+
+      "variants": [
+        {
+          "size": "1.2m x 0.6m",
+          "color": "Classic Black",
+          "price": 3990000,
+          "images": [
+            "/assets/images/desk/SmartDeskMono/epione-smartdesk-mono-black-corner.webp",
+            "/assets/images/desk/SmartDeskMono/epione-smartdesk-mono-black-side.webp",
+            "/assets/images/desk/SmartDeskMono/epione-smartdesk-mono-black-front.webp"
+         ],
+          "quantity": 3
+        },
+        {
+          "size": "1.2m x 0.6m",
+          "color": "Pure White",
+          "price": 3990000,
+          "images": [
+            "/assets/images/desk/SmartDeskMono/epione-smartdesk-mono-white-corner.webp",
+           
+             "/assets/images/desk/SmartDeskMono/epione-smartdesk-mono-white-side.webp",
+            "/assets/images/desk/SmartDeskMono/epione-smartdesk-mono-white-front.webp"
+
+         ],
+          "quantity": 3
+        },
+        {
+          "size": "1.2m x 0.6m",
+          "color": "OAK",
+          "price": 4090000,
+          "images": [
+            "/assets/images/desk/SmartDeskMono/epione-smartdesk-mono-oak-corner.webp",
+           
+            "/assets/images/desk/SmartDeskMono/epione-smartdesk-mono-oak-side.webp",
+            "/assets/images/desk/SmartDeskMono/eepione-smartdesk-mono-oak-front.webp"
+         ],
+          "quantity": 4
+        }
+      ]
     },
     {
       "id": 102,
       "slug": "smartdesk-lite-20",
       "name": "Bàn nâng hạ Epione SmartDesk Lite 2.0",
       "price": 5990000,
-      "image": "/assets/images/desk/smartdesk-lite-2.0-corner-white.webp",
+      "image": "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-corner-white.webp",
       "rating": 5,
-      "quantity": 10
+
+      "variants": [
+        {
+          "size": "1.2m x 0.6m",
+          "color": "Classic Black",
+          "price": 5990000,
+          "images": [ "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-corner-black.webp", 
+            "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-side-black.webp",
+            "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-front-black.webp" 
+          ],
+          "quantity": 2
+        },
+        {
+          "size": "1.2m x 0.6m",
+          "color": "Pure White",
+          "price": 5990000,
+          "images": [ "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-corner-white.webp",
+            "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-side-white.webp",
+            "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-back-white.webp" 
+          ],
+          "quantity": 2
+        },
+        {
+          "size": "1.2m x 0.6m",
+          "color": "OAK",
+          "price": 6090000,
+          "images": [ "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-corner-oak.webp",
+            "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-side-oak.webp",
+            "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-back-oak.webp" 
+          ],
+          "quantity": 2
+        },
+        {
+          "size": "1.4m x 0.7m",
+          "color": "Classic Black",
+          "price": 6690000,
+          "images": [ "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-corner-black.webp",
+            "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-side-black.webp",
+            "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-front-black.webp" 
+          ],
+          "quantity": 1
+        },
+        {
+          "size": "1.4m x 0.7m",
+          "color": "Pure White",
+          "price": 6690000,
+          "images": [ "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-corner-white.webp",
+            "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-side-white.webp",
+            "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-back-white.webp" 
+          ],
+          "quantity": 1
+        },
+        {
+          "size": "1.4m x 0.7m",
+          "color": "OAK",
+          "price": 6990000,
+          "images": [ "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-corner-oak.webp",
+            "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-side-oak.webp",
+            "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-back-oak.webp" 
+          ],
+          "quantity": 1
+        },
+        {
+          "size": "1.6m x 0.7m",
+          "color": "Classic Black",
+          "price": 6990000,
+          "images": [ "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-corner-black.webp",
+            "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-side-black.webp",
+            "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-front-black.webp" 
+          ], 
+          "quantity": 1
+        },
+        {
+          "size": "1.6m x 0.7m",
+          "color": "Pure White",
+          "price": 6990000,
+          "images": [ "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-corner-white.webp",
+            "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-side-white.webp",
+            "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-back-white.webp" 
+          ], 
+          "quantity": 1
+        },
+        {
+          "size": "1.6m x 0.7m",
+          "color": "OAK",
+          "price": 7290000,
+          "images": [ "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-corner-oak.webp",
+            "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-side-oak.webp",
+            "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-back-oak.webp" 
+          ], 
+          "quantity": 1
+        }
+       
+      ]
     },
     {
       "id": 103,
       "slug": "smartdesk-pro-20",
       "name": "Bàn nâng hạ Epione SmartDesk Pro 2.0",
       "price": 8690000,
-      "image": "/assets/images/desk/smartdesk-pro-2.0-corner-white.webp",
+      "image": "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-corner-white.webp",
       "rating": 5,
-      "quantity": 10
+
+      "variants": [
+        {
+          "size": "1.2m x 0.6m",
+          "color": "Classic Black",
+          "price": 8690000,
+          "images": [ "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-corner-black.webp",
+            "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-side-black.webp",
+            "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-back-black.webp" 
+          ],
+          "quantity": 2
+        },
+        {
+          "size": "1.2m x 0.6m",
+          "color": "Pure White",
+          "price": 8690000,
+          "images": [ "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-corner-white.webp",
+            "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-side-white.webp",
+            "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-back-white.webp" 
+          ],
+          "quantity": 2
+        },
+        {
+          "size": "1.2m x 0.6m",
+          "color": "OAK",
+          "price": 8790000,
+          "images": [ "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-corner-oak.webp",
+            "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-side-oak.webp",
+            "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-back-oak.webp" 
+          ],
+          "quantity": 2
+        },
+         {
+          "size": "1.4m x 0.7m",
+          "color": "Classic Black",
+          "price": 9390000,
+          "images": [ "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-corner-black.webp",
+            "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-side-black.webp",
+            "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-back-black.webp" 
+          ],
+          "quantity": 1
+        },
+        {
+          "size": "1.4m x 0.7m",
+          "color": "Pure White",
+          "price": 9390000,
+          "images": [ "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-corner-white.webp",
+            "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-side-white.webp",
+            "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-back-white.webp" 
+          ],
+          "quantity": 1
+        },
+        {
+          "size": "1.4m x 0.7m",
+          "color": "OAK",
+          "price": 9690000,
+          "images": [ "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-corner-oak.webp",
+            "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-side-oak.webp",
+            "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-back-oak.webp" 
+          ],
+          "quantity": 1
+        },
+        {
+          "size": "1.6m x 0.7m",
+          "color": "Classic Black",
+          "price": 9690000,
+          "images": [ "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-corner-black.webp",
+            "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-side-black.webp",
+            "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-back-black.webp" 
+          ], 
+          "quantity": 1
+        },
+        {
+          "size": "1.6m x 0.7m",
+          "color": "Pure White",
+          "price": 9690000,
+          "images": [ "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-corner-white.webp",
+            "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-side-white.webp",
+            "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-back-white.webp" 
+          ], 
+          "quantity": 1
+        },
+        {
+          "size": "1.6m x 0.7m",
+          "color": "OAK",
+          "price": 9990000,
+          "images": [ "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-corner-oak.webp",
+            "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-side-oak.webp",
+            "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-back-oak.webp" 
+          ], 
+          "quantity": 1
+        }
+      ]
     },
     {
       "id": 104,
       "slug": "delightdesk",
       "name": "Bàn nâng hạ Epione DelightDesk",
       "price": 10590000,
-      "image": "/assets/images/desk/7-ban-nang-ha-epione-delightdesk-side-right-oak.webp",
+      "image": "/assets/images/desk/DelightDesk/7-ban-nang-ha-epione-delightdesk-side-right-oak.webp",
       "rating": 5,
-      "quantity": 10
+
+      "variants": [
+        {
+          "size": "1.5m x 0.7m", "color": "Classic Black", "price": 10590000,
+          "images": [ "/assets/images/desk/DelightDesk/11-ban-nang-ha-epione-delightdesk-side-right-black.webp",
+              "/assets/images/desk/DelightDesk/9-ban-nang-ha-epione-delightdesk-front-black.webp",
+              "/assets/images/desk/DelightDesk/10-ban-nang-ha-epione-delightdesk-back-side-left-black.webp",
+              "/assets/images/desk/DelightDesk/12-ban-nang-ha-epione-delightdesk-back-black.webp"
+          ], "quantity": 2
+        },
+        {
+          "size": "1.5m x 0.7m", "color": "Pure White", "price": 10590000,
+          "images": [ "/assets/images/desk/DelightDesk/3-ban-nang-ha-epione-delightdesk-side-right-white.webp",
+              "/assets/images/desk/DelightDesk/1-ban-nang-ha-epione-delightdesk-front-white.webp",
+              "/assets/images/desk/DelightDesk/2-ban-nang-ha-epione-delightdesk-back-side-left-white.webp",
+              "/assets/images/desk/DelightDesk/4-ban-nang-ha-epione-delightdesk-back-white.webp"
+          ], "quantity": 2
+        },
+        {
+          "size": "1.5m x 0.7m", "color": "OAK", "price": 10790000,
+          "images": [ "/assets/images/desk/DelightDesk/7-ban-nang-ha-epione-delightdesk-side-right-oak.webp",
+              "/assets/images/desk/DelightDesk/5-ban-nang-ha-epione-delightdesk-front-oak.webp",
+              "/assets/images/desk/DelightDesk/6-ban-nang-ha-epione-delightdesk-back-side-left-oak.webp",
+              "/assets/images/desk/DelightDesk/8-ban-nang-ha-epione-delightdesk-back-oak.webp"
+          ], "quantity": 2
+        },
+        {
+          "size": "1.7m x 0.7m", "color": "Classic Black", "price": 11590000,
+          "images": [ "/assets/images/desk/DelightDesk/11-ban-nang-ha-epione-delightdesk-side-right-black.webp",
+                          
+                "/assets/images/desk/DelightDesk/9-ban-nang-ha-epione-delightdesk-front-black.webp",
+                "/assets/images/desk/DelightDesk/10-ban-nang-ha-epione-delightdesk-back-side-left-black.webp",
+                "/assets/images/desk/DelightDesk/12-ban-nang-ha-epione-delightdesk-back-black.webp"
+          ], "quantity": 1 
+        },
+        {
+          "size": "1.7m x 0.7m", "color": "Pure White", "price": 11590000,
+          "images": [ "/assets/images/desk/DelightDesk/3-ban-nang-ha-epione-delightdesk-side-right-white.webp",
+                            
+                  "/assets/images/desk/DelightDesk/1-ban-nang-ha-epione-delightdesk-front-white.webp",
+                  "/assets/images/desk/DelightDesk/2-ban-nang-ha-epione-delightdesk-back-side-left-white.webp",
+                  "/assets/images/desk/DelightDesk/4-ban-nang-ha-epione-delightdesk-back-white.webp"                                
+          ], "quantity": 1 
+        },
+        {
+          "size": "1.7m x 0.7m", "color": "OAK", "price": 11790000,
+          "images": [ "/assets/images/desk/DelightDesk/7-ban-nang-ha-epione-delightdesk-side-right-oak.webp",
+                              
+                    "/assets/images/desk/DelightDesk/5-ban-nang-ha-epione-delightdesk-front-oak.webp",
+                    "/assets/images/desk/DelightDesk/6-ban-nang-ha-epione-delightdesk-back-side-left-oak.webp",
+                    "/assets/images/desk/DelightDesk/8-ban-nang-ha-epione-delightdesk-back-oak.webp"    
+          ], "quantity": 1 
+        },
+        {
+          "size": "1.5m x 0.8m", "color": "Classic Black", "price": 11490000,
+          "images": [ "/assets/images/desk/DelightDesk/11-ban-nang-ha-epione-delightdesk-side-right-black.webp",
+              "/assets/images/desk/DelightDesk/9-ban-nang-ha-epione-delightdesk-front-black.webp",
+              "/assets/images/desk/DelightDesk/10-ban-nang-ha-epione-delightdesk-back-side-left-black.webp",
+              "/assets/images/desk/DelightDesk/12-ban-nang-ha-epione-delightdesk-back-black.webp"
+          ], "quantity": 1 
+        },
+        {
+          "size": "1.5m x 0.8m", "color": "Pure White", "price": 11490000,
+          "images": [ "/assets/images/desk/DelightDesk/3-ban-nang-ha-epione-delightdesk-side-right-white.webp",
+              "/assets/images/desk/DelightDesk/1-ban-nang-ha-epione-delightdesk-front-white.webp",
+              "/assets/images/desk/DelightDesk/2-ban-nang-ha-epione-delightdesk-back-side-left-white.webp",
+              "/assets/images/desk/DelightDesk/4-ban-nang-ha-epione-delightdesk-back-white.webp"
+          ], "quantity": 1 
+        },
+        {
+          "size": "1.5m x 0.8m", "color": "OAK", "price": 11990000,
+          "images": [ "/assets/images/desk/DelightDesk/7-ban-nang-ha-epione-delightdesk-side-right-oak.webp",
+              "/assets/images/desk/DelightDesk/5-ban-nang-ha-epione-delightdesk-front-oak.webp",
+              "/assets/images/desk/DelightDesk/6-ban-nang-ha-epione-delightdesk-back-side-left-oak.webp",
+              "/assets/images/desk/DelightDesk/8-ban-nang-ha-epione-delightdesk-back-oak.webp"
+          ], "quantity": 1 
+        },
+        {
+          "size": "1.7m x 0.8m", "color": "Classic Black", "price": 11990000,
+          "images": [ "/assets/images/desk/DelightDesk/11-ban-nang-ha-epione-delightdesk-side-right-black.webp",
+              "/assets/images/desk/DelightDesk/9-ban-nang-ha-epione-delightdesk-front-black.webp",
+              "/assets/images/desk/DelightDesk/10-ban-nang-ha-epione-delightdesk-back-side-left-black.webp",
+              "/assets/images/desk/DelightDesk/12-ban-nang-ha-epione-delightdesk-back-black.webp"
+          ], "quantity": 1 
+        },
+        {
+          "size": "1.7m x 0.8m", "color": "Pure White", "price": 11990000,
+          "images": [ "/assets/images/desk/DelightDesk/3-ban-nang-ha-epione-delightdesk-side-right-white.webp",
+              "/assets/images/desk/DelightDesk/1-ban-nang-ha-epione-delightdesk-front-white.webp",
+              "/assets/images/desk/DelightDesk/2-ban-nang-ha-epione-delightdesk-back-side-left-white.webp",
+              "/assets/images/desk/DelightDesk/4-ban-nang-ha-epione-delightdesk-back-white.webp"
+          ], "quantity": 1 
+        },
+        {
+          "size": "1.7m x 0.8m", "color": "OAK", "price": 12490000,
+          "images": [ "/assets/images/desk/DelightDesk/7-ban-nang-ha-epione-delightdesk-side-right-oak.webp",
+              "/assets/images/desk/DelightDesk/5-ban-nang-ha-epione-delightdesk-front-oak.webp",
+              "/assets/images/desk/DelightDesk/6-ban-nang-ha-epione-delightdesk-back-side-left-oak.webp",
+              "/assets/images/desk/DelightDesk/8-ban-nang-ha-epione-delightdesk-back-oak.webp"
+          ], "quantity": 1 
+        }
+
+      ]
     },
     {
       "id": 105,
       "slug": "smartdesk-frame",
       "name": "Khung bàn nâng hạ Epione SmartDesk",
       "price": 4990000,
-      "image": "/assets/images/desk/khung-ban-nang-ha-epione-smartdesk-904753.webp",
+      "image": "/assets/images/desk/Khung/khung-ban-nang-ha-epione-smartdesk-904753.webp",
       "rating": 0,
-      "quantity": 10
+
+      "variants": [
+        {
+          "style": "SmartDesk Lite 2.0",
+          "price": 4990000,
+          "images": [
+            "/assets/images/desk/Khung/khung-ban-nang-ha-epione-smartdesk-904753.webp"
+          ],
+          "quantity": 5
+        },
+        {
+          "style": "Smart Desk Pro 2.0",
+          "price": 7690000,
+          "images": [
+            "/assets/images/desk/Khung/khung-ban-nang-ha-epione-smartdesk-755508.webp"
+          ],
+          "quantity": 5
+        }
+      ]
     }
   ],
   "accessories": [
@@ -99,34 +595,91 @@
       "slug": "deskcasters",
       "name": "Bánh xe bàn nâng hạ Epione DeskCasters",
       "price": 390000,
-      "image": "/assets/images/accessories/banh-xe-ban-nang-ha-epione-deskcasters-134411.webp",
+      "image": "/assets/images/accessories/DeskCasters/banh-xe-ban-nang-ha-epione-deskcasters-134411.webp",
+      "images": [
+          "/assets/images/accessories/DeskCasters/banh-xe-ban-nang-ha-epione-deskcasters-134411.webp",
+          "/assets/images/accessories/DeskCasters/banh-xe-ban-nang-ha-epione-deskcasters-828087.webp",
+          "/assets/images/accessories/DeskCasters/banh-xe-ban-nang-ha-epione-deskcasters-639455.webp",
+          "/assets/images/accessories/DeskCasters/banh-xe-ban-nang-ha-epione-deskcasters-332674.webp"
+      ],
       "rating": 0,
-      "quantity": 0
+      "quantity": 0 
     },
     {
       "id": 202,
       "slug": "cabletray",
       "name": "Khay đi dây Epione CableTray",
       "price": 219000,
-      "image": "/assets/images/accessories/khay-di-day-epione-cabletray-126309.webp",
+      "image": "/assets/images/accessories/CableTray/khay-di-day-epione-cabletray-126309.webp",
       "rating": 0,
-      "quantity": 0
+   
+      "variants": [
+        {
+          "color": "All Black",
+          "price": 219000,
+          "images": [
+            "/assets/images/accessories/CableTray/khay-di-day-epione-cabletray-126309.webp",
+            "/assets/images/accessories/CableTray/khay-di-day-epione-cabletray-612041.webp",
+            "/assets/images/accessories/CableTray/khay-di-day-epione-cabletray-165170.webp",
+            "/assets/images/accessories/CableTray/khay-di-day-epione-cabletray-456752.webp"
+          ],
+          "quantity": 5
+        },
+        {
+          "color": "Pure White",
+          "price": 219000,
+          "images": [
+            "/assets/images/accessories/CableTray/khay-di-day-epione-cabletray-656276.webp",
+            "/assets/images/accessories/CableTray/khay-di-day-epione-cabletray-720805.webp",
+            "/assets/images/accessories/CableTray/khay-di-day-epione-cabletray-926499.webp",
+            "/assets/images/accessories/CableTray/khay-di-day-epione-cabletray-741312.webp"
+
+          ],
+          "quantity": 5
+        }
+      ]
     },
     {
       "id": 203,
       "slug": "essentials-arm",
       "name": "Giá đỡ màn hình Epione Essentials Arm",
       "price": 790000,
-      "image": "/assets/images/accessories/tay-nang-man-hinh-epione-essentials-arm-453546.webp",
+      "image": "/assets/images/accessories/EssentialsArm/tay-nang-man-hinh-epione-essentials-arm-453546.webp",
       "rating": 5,
-      "quantity": 10
+
+      "variants": [
+        {
+          "version": "Arm đơn", "color": "All Black", "price": 790000,
+          "images": [ "/assets/images/accessories/EssentialsArm/tay-nang-man-hinh-epione-essentials-arm-453546.webp" ], "quantity": 3
+        },
+        {
+          "version": "Arm đơn", "color": "Pure White", "price": 790000,
+          "images": [ "/assets/images/accessories/EssentialsArm/tay-nang-man-hinh-epione-essentials-arm-811279.webp" ], "quantity": 3
+        },
+        {
+          "version": "Arm đôi", "color": "All Black", "price": 1390000,
+          "images": [ "/assets/images/accessories/essentials-arm-duo-all-black.webp" ], "quantity": 2
+        },
+        {
+          "version": "Arm đôi", "color": "Pure White", "price": 1390000,
+      
+          "images": [ "/assets/images/accessories/EssentialsArm/tay-nang-man-hinh-epione-essentials-arm-811279.webp" ], "quantity": 2
+        }
+    
+      ]
     },
     {
       "id": 204,
       "slug": "cpuholder",
       "name": "Giá đỡ máy tính Epione CPUHolder",
       "price": 890000,
-      "image": "/assets/images/accessories/gia-do-may-tinh-gan-ban-epione-cpuholder-574633.webp",
+      "image": "/assets/images/accessories/CPUHolder/gia-do-may-tinh-gan-ban-epione-cpuholder-574633.webp",
+       "images": [
+           "/assets/images/accessories/CPUHolder/gia-do-may-tinh-gan-ban-epione-cpuholder-574633.webp",
+            "/assets/images/accessories/CPUHolder/gia-do-may-tinh-gan-ban-epione-cpuholder-385344.webp",
+            "/assets/images/accessories/CPUHolder/ggia-do-may-tinh-gan-ban-epione-cpuholder-958445.webp"
+      
+       ],
       "rating": 0,
       "quantity": 0
     },
@@ -135,25 +688,64 @@
       "slug": "delight-arm",
       "name": "Giá đỡ màn hình Epione Delight Arm",
       "price": 2290000,
-      "image": "/assets/images/accessories/delight-arm.webp",
+      "image": "/assets/images/accessories/DelightArm/delight-arm.webp",
       "rating": 0,
-      "quantity": 10
+
+      "variants": [
+        {
+          "color": "All Black",
+          "price": 2290000,
+          "images": [
+            "/assets/images/accessories/DelightArm/delight-arm-all-black.webp"
+          ],
+          "quantity": 10 
+        }
+     
+      ]
     },
     {
       "id": 206,
       "slug": "monitor-stand-20",
       "name": "Kệ màn hình Epione MonitorStand 2.0",
       "price": 869000,
-      "image": "/assets/images/accessories/epione-monitorstand-2-walnut-117.webp",
+      "image": "/assets/images/accessories/MonitorStand2.0/epione-monitorstand-2-walnut-117.webp",
       "rating": 5,
-      "quantity": 10
+
+      "variants": [
+        {
+          "size": "80 cm", "color": "Walnut", "price": 869000,
+          "images": [ "/assets/images/accessories/MonitorStand2.0/epione-monitorstand-2-walnut-80.webp" ], "quantity": 3
+        },
+        {
+          "size": "80 cm", "color": "Ash", "price": 869000,
+        
+          "images": [ "/assets/images/accessories/MonitorStand2.0/epione-monitorstand-2-oak-80.webp" ], "quantity": 3
+        },
+        {
+          "size": "117 cm", "color": "Walnut", "price": 1150000,
+          "images": [ "/assets/images/accessories/MonitorStand2.0/epione-monitorstand-2-walnut-117.webp" ], "quantity": 2
+        },
+        {
+          "size": "117 cm", "color": "Ash", "price": 1150000,
+       
+          "images": [ "/assets/images/accessories/MonitorStand2.0/epione-monitorstand-2d-oak-117.webp" ], "quantity": 2
+        }
+  
+      ]
     },
     {
       "id": 207,
       "slug": "essentials-pad",
       "name": "Tấm lót bàn Epione Essentials Pad",
       "price": 790000,
-      "image": "/assets/images/accessories/tam-lot-ban-epione-essentials-pad-213616.webp",
+      "image": "/assets/images/accessories/EssentialsPad/tam-lot-ban-epione-essentials-pad-213616.webp",
+      "images": [
+          "/assets/images/accessories/EssentialsPad/tam-lot-ban-epione-essentials-pad-213616.webp",
+          "/assets/images/accessories/EssentialsPad/tam-lot-ban-epione-essentials-pad-373878.webp",
+          "/assets/images/accessories/EssentialsPad/tam-lot-ban-epione-essentials-pad-125244.webp",
+          "/assets/images/accessories/EssentialsPad/tam-lot-ban-epione-essentials-pad-985519.webp"
+      
+      ],
       "rating": 0,
       "quantity": 10
     },
@@ -162,7 +754,11 @@
       "slug": "ergo-ease",
       "name": "Kê chân công thái học Epione ErgoEase",
       "price": 490000,
-      "image": "/assets/images/accessories/ke-chan-cong-thai-hoc-epione-ergoease-202823.webp",
+      "image": "/assets/images/accessories/ErgoEase/ke-chan-cong-thai-hoc-epione-ergoease-202823.webp",
+       "images": [
+           "/assets/images/accessories/ErgoEase/ke-chan-cong-thai-hoc-epione-ergoease-202823.webp"
+      
+       ],
       "rating": 5,
       "quantity": 10
     },
@@ -171,7 +767,14 @@
       "slug": "cabinet-w400",
       "name": "Tủ Epione Essentials Cabinet W400",
       "price": 2190000,
-      "image": "/assets/images/accessories/tu-van-phong-epione-essentials-lip-edge-cabinet-w400-730879.webp",
+      "image": "/assets/images/accessories/EssentialsCabinetW400/tu-van-phong-epione-essentials-lip-edge-cabinet-w400-730879.webp",
+      "images": [
+          "/assets/images/accessories/EssentialsCabinetW400/tu-van-phong-epione-essentials-lip-edge-cabinet-w400-730879.webp",
+          "/assets/images/accessories/EssentialsCabinetW400/tu-van-phong-epione-essentials-lip-edge-cabinet-w400-617129.webp",
+          "/assets/images/accessories/EssentialsCabinetW400/tu-van-phong-epione-essentials-lip-edge-cabinet-w400-139463.webp"
+
+          
+      ],
       "rating": 0,
       "quantity": 10
     },
@@ -180,34 +783,87 @@
       "slug": "flexback",
       "name": "Tựa lưng công thái học Epione FlexBack",
       "price": 950000,
-      "image": "/assets/images/accessories/tua-lung-epione-flexback-corner-angle-front.webp",
+      "image": "/assets/images/accessories/FlexBack/tua-lung-epione-flexback-corner-angle-front.webp",
+      "images": [
+          "/assets/images/accessories/FlexBack/tua-lung-epione-flexback-corner-angle-front.webp",
+          "/assets/images/accessories/FlexBack/tua-lung-epione-flexback-side-angle.webp"
+        
+      ],
       "rating": 5,
       "quantity": 10
     },
     {
       "id": 211,
       "slug": "footrest",
-      "name": "Kê chân ghế",
-      "price": 390000,
-      "image": "/assets/images/accessories/ke-chan-ghe-500097.webp",
+      "name": "Kê chân ghế", 
+      "price": 390000, 
+      "image": "/assets/images/accessories/KeChan/ke-chan-ghe-545424.webp", 
       "rating": 5,
-      "quantity": 10
+
+      "variants": [ 
+        {
+          "style": "EasyChair", 
+          "name_variant": "Kê chân ghế cho EasyChair", 
+          "price": 1120000,
+          "images": [
+            "/assets/images/accessories/ke-chan-ghe-500097.webp"
+          
+          ],
+          "quantity": 5
+        },
+        {
+          "style": "FortisChair", 
+          "name_variant": "Kê chân ghế cho FortisChair", 
+          "price": 390000, 
+          "images": [
+            "/assets/images/accessories/KeChan/ke-chan-ghe-545424.webp" 
+           
+         ],
+          "quantity": 5
+        }
+      ]
     },
     {
       "id": 212,
       "slug": "flexishelf",
       "name": "Kệ đa năng Epione Essentials Flexi Shelf",
       "price": 1800000,
-      "image": "/assets/images/accessories/ke-da-nang-epione-essentials-flexi-shelf-789790.webp",
+      "image": "/assets/images/accessories/EssentialsFlexiShelf/ke-da-nang-epione-essentials-flexi-shelf-192176.webp",
       "rating": 0,
-      "quantity": 10
+
+      "variants": [
+        {
+          "style": "3 tầng",
+          "price": 1800000,
+          "images": [
+            "/assets/images/accessories/EssentialsFlexiShelf/ke-da-nang-epione-essentials-flexi-shelf-192176.webp"
+          
+          ],
+          "quantity": 5
+        },
+        {
+          "style": "5 tầng",
+          "price": 2500000,
+          "images": [
+            "/assets/images/accessories/EssentialsFlexiShelf/ke-da-nang-epione-essentials-flexi-shelf-789790.webp"
+           
+          ],
+          "quantity": 5
+        }
+      ]
     },
     {
       "id": 213,
       "slug": "cabinet-w350",
       "name": "Tủ Epione Essentials Cabinet W350",
       "price": 1400000,
-      "image": "/assets/images/accessories/tu-epione-essential-cabinet-w350-squint.webp",
+      "image": "/assets/images/accessories/CabinetW350/tu-epione-essential-cabinet-w350-squint.webp",
+      "images": [
+          "/assets/images/accessories/CabinetW350/tu-epione-essential-cabinet-w350-squint.webp",
+          "/assets/images/accessories/CabinetW350/tu-epione-essential-cabinet-w350-squint-1.webp",
+          "/assets/images/accessories/CabinetW350/tu-epione-essential-cabinet-w350-squint-2.webp"
+         
+      ],
       "rating": 0,
       "quantity": 10
     }

@@ -8,9 +8,9 @@ import {
 } from "@ant-design/icons";
 
 const navItems = [
-  { label: "Ghế công thái học", path: "/products/chairs" },
-  { label: "Bàn Epione", path: "/products/desks" },
-  { label: "Phụ kiện", path: "/products/accessories" },
+  { label: "Ghế công thái học", path: "/collections/chairs" },
+  { label: "Bàn Epione", path: "/collections/desks" },
+  { label: "Phụ kiện", path: "/collections/accessories" },
 ];
 
 const NavBar = () => {

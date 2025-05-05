@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 
 const ProductCard = ({ product }) => {
   const rating = typeof product.rating === "string" ? 0 : product.rating;
+  //  Tính toán trạng thái còn hàng
+  const isInStock = product.variants?.length
+    ? product.variants.some((variant) => variant.quantity > 0)
+    : product.quantity > 0;
 
   return (
     <Link to={`/products/${product.slug}`} className="block">
@@ -32,7 +36,7 @@ const ProductCard = ({ product }) => {
             {product.price.toLocaleString()} VND
           </p>
           <div className="flex items-center gap-4 mt-2">
-            {product.quantity > 0 ? (
+            {isInStock ? (
               <p className="text-green-700 text-[10px] flex items-center gap-1">
                 <CheckOutlined />
                 <span className="text-[10px]">Còn hàng</span>
