@@ -6,7 +6,6 @@ const SearchBar = ({ products }) => {
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
 
-  // Lọc sản phẩm theo tên
   const filteredProducts = products.filter((product) =>
     product.name.toLowerCase().includes(query.toLowerCase())
   );
