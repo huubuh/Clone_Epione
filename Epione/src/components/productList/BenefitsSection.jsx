@@ -90,9 +90,7 @@ const BenefitsSection = ({ type }) => {
 
   return (
     <section className="max-w-6xl mx-auto px-4 mb-12">
-      <h2 className="text-4xl font-semibold mb-12 text-center">
-        {content.title}
-      </h2>
+      <h2 className="text-4xl font-semibold text-center">{content.title}</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
         {/* Cột bên trái */}
         <div className="space-y-6">

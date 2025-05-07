@@ -50,8 +50,8 @@ const NavBar = () => {
                   className={({ isActive }) =>
                     `px-4 py-2 transition-colors font-medium ${
                       isActive
-                        ? "text-blue-600 border-b-2 border-blue-600 pb-1"
-                        : "text-gray-700 hover:text-blue-600 hover:bg-blue-100 rounded-2xl"
+                        ? "text-[#1106a7] border-b-2 border-[#1106a7] pb-1"
+                        : "text-gray-700 hover:text-[#1106a7] hover:bg-blue-100 rounded-2xl"
                     }`
                   }
                 >
@@ -71,8 +71,8 @@ const NavBar = () => {
             />
             <SearchOutlined className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" />
           </div>
-          <UserOutlined className="text-xl cursor-pointer hover:text-blue-600" />
-          <ShoppingCartOutlined className="text-xl cursor-pointer hover:text-blue-600" />
+          <UserOutlined className="text-xl cursor-pointer hover:text-[#1106a7]" />
+          <ShoppingCartOutlined className="text-xl cursor-pointer hover:text-[#1106a7]" />
         </div>
       </div>
     </header>

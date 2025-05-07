@@ -6,12 +6,16 @@ import Button from "../ui/Button";
 import RatingStars from "../RatingStars";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Thumbs, EffectFade } from "swiper/modules";
-import { CheckOutlined } from "@ant-design/icons";
+// import truct from "../../assets/images/image_4.png";
+import delevery from "../../assets/images/image_4_2.png";
+// import shield from "../../assets/images/shield-tick.png";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "swiper/css/effect-fade";
 import "./ProductDetail.css";
+
 const ProductDetail = () => {
   const { slug } = useParams();
 
@@ -31,6 +35,9 @@ const ProductDetail = () => {
   const [allImages, setAllImages] = useState([]);
   const [activeImage, setActiveImage] = useState(null);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+  // State cho tình trạng tồn kho
+  const [isOutOfStock, setIsOutOfStock] = useState(false);
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -64,6 +71,12 @@ const ProductDetail = () => {
             if (firstVariant.color) {
               setSelectedColor(firstVariant.color);
             }
+
+            // Kiểm tra tình trạng tồn kho của biến thể đầu tiên
+            setIsOutOfStock(firstVariant.quantity <= 0);
+          } else if (data.quantity !== undefined) {
+            // Nếu không có biến thể, kiểm tra tồn kho của sản phẩm chính
+            setIsOutOfStock(data.quantity <= 0);
           }
 
           const productImages = data.images || [];
@@ -98,6 +111,15 @@ const ProductDetail = () => {
           (!selectedVersion || v.version === selectedVersion) &&
           (!selectedColor || v.color === selectedColor)
       );
+
+      // Cập nhật trạng thái tồn kho dựa trên biến thể được chọn
+      if (selectedVariant) {
+        setIsOutOfStock(selectedVariant.quantity <= 0);
+      } else if (product.quantity !== undefined) {
+        setIsOutOfStock(product.quantity <= 0);
+      } else {
+        setIsOutOfStock(false);
+      }
 
       const imagesToShow = selectedVariant?.images || product.images || [];
 
@@ -139,6 +161,7 @@ const ProductDetail = () => {
   const versions = [...new Set(variants.map((v) => v.version).filter(Boolean))];
   const colors = [...new Set(variants.map((v) => v.color).filter(Boolean))];
 
+  // Tìm biến thể hiện tại
   const selectedVariant = variants.find(
     (v) =>
       (!selectedSize || v.size === selectedSize) &&
@@ -148,6 +171,51 @@ const ProductDetail = () => {
   );
 
   const price = selectedVariant?.price || product.price;
+
+  // Tìm tình trạng tồn kho theo từng thuộc tính
+  const getSizeStock = (size) => {
+    const relatedVariants = variants.filter(
+      (v) =>
+        v.size === size &&
+        (!selectedColor || v.color === selectedColor) &&
+        (!selectedStyle || v.style === selectedStyle) &&
+        (!selectedVersion || v.version === selectedVersion)
+    );
+    return relatedVariants.some((v) => v.quantity > 0);
+  };
+
+  const getColorStock = (color) => {
+    const relatedVariants = variants.filter(
+      (v) =>
+        v.color === color &&
+        (!selectedSize || v.size === selectedSize) &&
+        (!selectedStyle || v.style === selectedStyle) &&
+        (!selectedVersion || v.version === selectedVersion)
+    );
+    return relatedVariants.some((v) => v.quantity > 0);
+  };
+
+  const getStyleStock = (style) => {
+    const relatedVariants = variants.filter(
+      (v) =>
+        v.style === style &&
+        (!selectedSize || v.size === selectedSize) &&
+        (!selectedColor || v.color === selectedColor) &&
+        (!selectedVersion || v.version === selectedVersion)
+    );
+    return relatedVariants.some((v) => v.quantity > 0);
+  };
+
+  const getVersionStock = (version) => {
+    const relatedVariants = variants.filter(
+      (v) =>
+        v.version === version &&
+        (!selectedSize || v.size === selectedSize) &&
+        (!selectedColor || v.color === selectedColor) &&
+        (!selectedStyle || v.style === selectedStyle)
+    );
+    return relatedVariants.some((v) => v.quantity > 0);
+  };
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
@@ -218,7 +286,7 @@ const ProductDetail = () => {
           {/* Màu sắc */}
           {colors.length > 0 && (
             <div className="mb-4">
-              <p className="font-medium mb-1">
+              <p className="font-semibold mb-1 text-[14px]">
                 {category === "desks"
                   ? "Màu sắc mặt bàn"
                   : product.name.toLowerCase().includes("kệ")
@@ -226,44 +294,47 @@ const ProductDetail = () => {
                   : "Màu sắc"}
               </p>
               <div className="flex gap-2 flex-wrap">
-                {colors.map((color) => (
-                  <button
-                    key={color}
-                    onClick={() => setSelectedColor(color)}
-                    className={`border px-3 py-1 rounded flex items-center gap-2 ${
-                      selectedColor === color
-                        ? "border-blue-600 text-blue-700"
-                        : "border-gray-300 text-gray-600"
-                    }`}
-                  >
-                    <span
-                      className="w-4 h-4 rounded-full"
-                      style={{
-                        backgroundColor: color.toLowerCase().includes("black")
-                          ? "#000"
-                          : color.toLowerCase().includes("gray")
-                          ? "#999"
-                          : color.toLowerCase().includes("oak")
-                          ? "#d4a66a"
-                          : color.toLowerCase().includes("white")
-                          ? "#fff"
-                          : color.toLowerCase().includes("walnut")
-                          ? "#5d4037"
-                          : color.toLowerCase().includes("ash")
-                          ? "#f5f5dc"
-                          : "#999",
-                      }}
-                    />
-                    {selectedColor === color && <CheckOutlined />} {color}
-                  </button>
-                ))}
+                {colors.map((color) => {
+                  const isColorInStock = getColorStock(color);
+                  return (
+                    <button
+                      key={color}
+                      onClick={() => setSelectedColor(color)}
+                      className={`border px-1 py-1 rounded-lg flex items-center gap-2 text-[12px]  ${
+                        selectedColor === color
+                          ? "border-[#1106a7] text-[#1106a7]"
+                          : "border-gray-300 text-gray-600"
+                      } ${!isColorInStock ? "line-through opacity-60" : ""}`}
+                    >
+                      <span
+                        className="w-4 h-4 rounded-full"
+                        style={{
+                          backgroundColor: color.toLowerCase().includes("black")
+                            ? "#000"
+                            : color.toLowerCase().includes("gray")
+                            ? "#999"
+                            : color.toLowerCase().includes("oak")
+                            ? "#d4a66a"
+                            : color.toLowerCase().includes("white")
+                            ? "#fff"
+                            : color.toLowerCase().includes("walnut")
+                            ? "#5d4037"
+                            : color.toLowerCase().includes("ash")
+                            ? "#f5f5dc"
+                            : "#999",
+                        }}
+                      />
+                      {color}
+                    </button>
+                  );
+                })}
               </div>
             </div>
           )}
           {/* Kiểu dáng */}
           {styles.length > 0 && (
             <div className="mb-4">
-              <p className="font-medium mb-1 ">
+              <p className="font-semibold mb-1 text-[14px] ">
                 {category === "chairs"
                   ? "Phiên bản"
                   : product.name.toLowerCase().includes("arm")
@@ -273,47 +344,53 @@ const ProductDetail = () => {
                   : "Loại"}
               </p>
               <div className="flex gap-2 flex-wrap">
-                {styles.map((style) => (
-                  <button
-                    key={style}
-                    onClick={() => setSelectedStyle(style)}
-                    className={`border px-3 py-1 rounded flex items-center gap-1 ${
-                      selectedStyle === style
-                        ? "border-blue-600 text-blue-700"
-                        : "border-gray-300 text-gray-600"
-                    }`}
-                  >
-                    {selectedStyle === style && <CheckOutlined />} {style}
-                  </button>
-                ))}
+                {styles.map((style) => {
+                  const isStyleInStock = getStyleStock(style);
+                  return (
+                    <button
+                      key={style}
+                      onClick={() => setSelectedStyle(style)}
+                      className={`border px-1 py-1 rounded-lg flex items-center gap-2 text-[12px]  ${
+                        selectedStyle === style
+                          ? "border-[#1106a7] text-[#1106a7]"
+                          : "border-gray-300 text-gray-600"
+                      } ${!isStyleInStock ? "line-through opacity-60" : ""}`}
+                    >
+                      {style}
+                    </button>
+                  );
+                })}
               </div>
             </div>
           )}
           {/* Phiên bản */}
           {versions.length > 0 && (
             <div className="mb-4">
-              <p className="font-medium mb-1">Version</p>
+              <p className="font-semibold mb-1 text-[14px]">Version</p>
               <div className="flex gap-2 flex-wrap">
-                {versions.map((version) => (
-                  <button
-                    key={version}
-                    onClick={() => setSelectedVersion(version)}
-                    className={`border px-3 py-1 rounded flex items-center gap-1 ${
-                      selectedVersion === version
-                        ? "border-blue-600 text-blue-700"
-                        : "border-gray-300 text-gray-600"
-                    }`}
-                  >
-                    {selectedVersion === version && <CheckOutlined />} {version}
-                  </button>
-                ))}
+                {versions.map((version) => {
+                  const isVersionInStock = getVersionStock(version);
+                  return (
+                    <button
+                      key={version}
+                      onClick={() => setSelectedVersion(version)}
+                      className={`border px-1 py-1 rounded-lg flex items-center gap-2 text-[12px] ${
+                        selectedVersion === version
+                          ? "border-[#1106a7] text-[#1106a7]"
+                          : "border-gray-300 text-gray-600"
+                      } ${!isVersionInStock ? "line-through opacity-60" : ""}`}
+                    >
+                      {version}
+                    </button>
+                  );
+                })}
               </div>
             </div>
           )}
           {/* kích thước */}
           {sizes.length > 0 && (
             <div className="mb-4">
-              <p className="font-medium mb-1">
+              <p className="font-semibold mb-1 text-[14px]">
                 {category === "desks"
                   ? "Kích thước mặt bàn"
                   : product.name.toLowerCase().includes("monitor") ||
@@ -322,31 +399,68 @@ const ProductDetail = () => {
                   : "Kích thước"}
               </p>
               <div className="flex gap-2 flex-wrap">
-                {sizes.map((size) => (
-                  <button
-                    key={size}
-                    onClick={() => setSelectedSize(size)}
-                    className={`border px-3 py-1 rounded flex items-center gap-1 ${
-                      selectedSize === size
-                        ? "border-blue-600 text-blue-700"
-                        : "border-gray-300 text-gray-600"
-                    }`}
-                  >
-                    {selectedSize === size && <CheckOutlined />} {size}
-                  </button>
-                ))}
+                {sizes.map((size) => {
+                  const isSizeInStock = getSizeStock(size);
+                  return (
+                    <button
+                      key={size}
+                      onClick={() => setSelectedSize(size)}
+                      className={`border px-1 py-1 rounded-lg flex items-center gap-2 text-[12px] ${
+                        selectedSize === size
+                          ? "border-[#1106a7] text-[#1106a7]"
+                          : "border-gray-300 text-gray-600"
+                      } ${!isSizeInStock ? "line-through opacity-60" : ""}`}
+                    >
+                      {size}
+                    </button>
+                  );
+                })}
               </div>
             </div>
           )}
-          <div className="mb-4 w-full">
-            <div>
-              <label className="block text-gray-700 mb-2">Số lượng</label>
+
+          <InputNumber
+            min={1}
+            value={quantity}
+            onChange={setQuantity}
+            disabled={isOutOfStock}
+          />
+          {isOutOfStock ? (
+            <button
+              className="w-full md:w-auto mb-6 ml-10 bg-[#1106a7] text-white px-4 py-2 rounded-2xl cursor-not-allowed opacity-70"
+              onClick={(e) => e.preventDefault()}
+            >
+              Đã bán hết
+            </button>
+          ) : (
+            <Button
+              variant="primary"
+              className=" md:w-auto mb-6 ml-10 cursor-pointer font-semibold "
+            >
+              Thêm vào giỏ hàng
+            </Button>
+          )}
+          <div className="border border-gray-200 rounded-lg p-4 w-[400px]  bg-white">
+            <div className="flex items-center gap-2 mb-3 ">
+              <img src={delevery} alt="Giao hàng" className="w-5 h-5" />
+              <p className="font-semibold text-[12px]">Giao hàng</p>
             </div>
-            <div>
-              <InputNumber min={1} value={quantity} onChange={setQuantity} />
-              <Button variant="primary" className="w-full md:w-auto mb-6 ml-10">
-                Thêm vào giỏ hàng
-              </Button>
+
+            <div className="grid grid-cols-3  text-[12px] text-gray-700">
+              <span>Khu vực Nội thành TP.HCM</span>
+              <span>Trong vòng 24h</span>
+              <span className="font-semibold  text-black">Miễn phí</span>
+              <span>Khu vực Ngoại thành TP.HCM</span>
+              <span>1-3 Ngày</span>
+              <span className="font-semibold text-black">Miễn phí</span>
+
+              <span>Khu vực Nội thành & Ngoại thành Hà Nội</span>
+              <span>3-4 ngày</span>
+              <span className="font-semibold text-black">Miễn phí</span>
+
+              <span>Các tỉnh thành khác</span>
+              <span>5-7 ngày</span>
+              <span className="font-semibold text-black">Miễn phí</span>
             </div>
           </div>
         </div>
