@@ -86,3 +86,22 @@ export const getCategoryCounts = async () => {
     throw new Error("Không thể tải dữ liệu danh mục");
   }
 };
+
+// Lấy tất cả sản phẩm (ghế, bàn, phụ kiện)
+export const getAllProducts = async () => {
+  try {
+    const [chairsRes, desksRes, accessoriesRes] = await Promise.all([
+      axios.get(`${API_URL}/chairs`),
+      axios.get(`${API_URL}/desks`),
+      axios.get(`${API_URL}/accessories`),
+    ]);
+    return [
+      ...chairsRes.data,
+      ...desksRes.data,
+      ...accessoriesRes.data,
+    ];
+  } catch (error) {
+    console.error("Không thể lấy tất cả sản phẩm:", error.message);
+    return [];
+  }
+};
