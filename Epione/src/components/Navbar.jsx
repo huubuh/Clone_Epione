@@ -1,11 +1,19 @@
 import { useEffect, useState } from "react";
 import Logo from "../assets/images/Logo.avif";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import {
   UserOutlined,
   ShoppingCartOutlined,
-  SearchOutlined,
+  LogoutOutlined,
+  DashboardOutlined,
 } from "@ant-design/icons";
+import { Dropdown, Avatar, Badge } from "antd";
+import { useAuth } from "../context/AuthContext";
+import SearchBar from "./SearchBar";
+import { getAllProducts } from "../services/productService";
+import { useCart } from "../context/CartContext";
+import axios from "axios";
+import CartDrawer from "./CartDrawer";
 
 const navItems = [
   { label: "Ghế công thái học", path: "/collections/chairs" },
@@ -15,14 +23,84 @@ const navItems = [
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [userRole, setUserRole] = useState("");
+  const [products, setProducts] = useState([]);
+  const navigate = useNavigate();
+  const { logout } = useAuth();
+  const { cartCount } = useCart();
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [userInfo, setUserInfo] = useState(null);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const all = await getAllProducts();
+      setProducts(all);
+    };
+    fetchProducts();
+  }, []);
 
   const handleScroll = () => {
     setIsScrolled(window.scrollY > 20);
   };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Kiểm tra trạng thái đăng nhập khi component được render
+  useEffect(() => {
+    const authStatus = localStorage.getItem("isAuthenticated") === "true";
+    const role = localStorage.getItem("userRole") || "";
+
+    setIsAuthenticated(authStatus);
+    setUserRole(role);
+  }, []);
+
+  // Lấy userInfo khi đăng nhập
+  useEffect(() => {
+    const email = localStorage.getItem("userEmail");
+    if (email) {
+      axios.get(`http://localhost:3000/users?email=${email}`).then((res) => {
+        if (res.data.length > 0) setUserInfo(res.data[0]);
+      });
+    }
+  }, [isAuthenticated]);
+
+  // Hàm xử lý đăng xuất
+  const handleLogout = () => {
+    logout();
+    navigate("/");
+  };
+
+  const userMenuItems = [
+    ...(userRole !== "admin"
+      ? [
+          {
+            key: "profile",
+            label: "Thông tin cá nhân",
+            icon: <UserOutlined />,
+            onClick: () => navigate("/account/profile"),
+          },
+        ]
+      : []),
+    {
+      key: "logout",
+      label: "Đăng xuất",
+      icon: <LogoutOutlined />,
+      onClick: handleLogout,
+    },
+  ];
+
+  if (userRole === "admin") {
+    userMenuItems.unshift({
+      key: "dashboard",
+      label: "Admin Dashboard",
+      icon: <DashboardOutlined />,
+      onClick: () => navigate("/admin/dashboard"),
+    });
+  }
 
   const headerClass =
     "bg-white shadow-sm sticky top-0 z-50 transition-all duration-300";
@@ -63,16 +141,38 @@ const NavBar = () => {
         </nav>
 
         <div className="flex items-center gap-4">
-          <div className="relative w-[250px]">
-            <input
-              type="text"
-              className="w-full border rounded-xl pl-10 py-1 pr-3 outline-none"
-              placeholder="Tìm kiếm..."
+          <SearchBar products={products} />
+
+          {isAuthenticated ? (
+            <Dropdown
+              menu={{ items: userMenuItems }}
+              placement="bottomRight"
+              arrow
+            >
+              <Avatar
+                icon={<UserOutlined />}
+                className="cursor-pointer bg-[#1106a7] hover:opacity-80"
+              />
+            </Dropdown>
+          ) : (
+            <UserOutlined
+              className="text-xl cursor-pointer hover:text-[#1106a7]"
+              onClick={() => navigate("/account/login")}
             />
-            <SearchOutlined className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" />
-          </div>
-          <UserOutlined className="text-xl cursor-pointer hover:text-[#1106a7]" />
-          <ShoppingCartOutlined className="text-xl cursor-pointer hover:text-[#1106a7]" />
+          )}
+
+          <Badge count={cartCount} size="small" offset={[0, 2]}>
+            <ShoppingCartOutlined
+              className="text-xl cursor-pointer hover:text-[#1106a7]"
+              onClick={() => setDrawerOpen(true)}
+            />
+          </Badge>
+          <CartDrawer
+            drawerOpen={drawerOpen}
+            setDrawerOpen={setDrawerOpen}
+            userInfo={userInfo}
+            setUserInfo={setUserInfo}
+          />
         </div>
       </div>
     </header>

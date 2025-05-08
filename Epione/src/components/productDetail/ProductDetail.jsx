@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { InputNumber } from "antd";
+import { InputNumber, message } from "antd";
 import { getProductBySlug } from "../../services/productService";
 import Button from "../ui/Button";
 import RatingStars from "../RatingStars";
@@ -15,6 +15,9 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "swiper/css/effect-fade";
 import "./ProductDetail.css";
+import { useCart } from "../../context/CartContext";
+import { useAuth } from "../../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const ProductDetail = () => {
   const { slug } = useParams();
@@ -38,6 +41,10 @@ const ProductDetail = () => {
 
   // State cho tình trạng tồn kho
   const [isOutOfStock, setIsOutOfStock] = useState(false);
+
+  const { addToCart } = useCart();
+  const { isAuthenticated, userRole } = useAuth();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -418,28 +425,60 @@ const ProductDetail = () => {
               </div>
             </div>
           )}
-
-          <InputNumber
-            min={1}
-            value={quantity}
-            onChange={setQuantity}
-            disabled={isOutOfStock}
-          />
-          {isOutOfStock ? (
-            <button
-              className="w-full md:w-auto mb-6 ml-10 bg-[#1106a7] text-white px-4 py-2 rounded-2xl cursor-not-allowed opacity-70"
-              onClick={(e) => e.preventDefault()}
-            >
-              Đã bán hết
-            </button>
-          ) : (
-            <Button
-              variant="primary"
-              className=" md:w-auto mb-6 ml-10 cursor-pointer font-semibold "
-            >
-              Thêm vào giỏ hàng
-            </Button>
-          )}
+          <div className="flex gap-20">
+            <div>
+              <InputNumber
+                min={1}
+                value={quantity}
+                onChange={setQuantity}
+                disabled={isOutOfStock}
+              />
+            </div>
+            <div>
+              {isOutOfStock ? (
+                <button
+                  className="w-full md:w-auto mb-6 ml-10 bg-[#1106a7] text-white px-4 py-2 rounded-2xl cursor-not-allowed opacity-70"
+                  onClick={(e) => e.preventDefault()}
+                >
+                  Đã bán hết
+                </button>
+              ) : (
+                <Button
+                  variant="primary"
+                  className=" md:w-auto mb-6 ml-10 cursor-pointer font-semibold "
+                  onClick={() => {
+                    if (!isAuthenticated) {
+                      message.warning(
+                        "Bạn cần đăng nhập để thêm vào giỏ hàng!"
+                      );
+                      navigate("/account/login");
+                      return;
+                    }
+                    if (userRole === "admin") {
+                      message.warning(
+                        "Admin không thể thêm sản phẩm vào giỏ hàng!"
+                      );
+                      return;
+                    }
+                    addToCart(
+                      {
+                        ...product,
+                        selectedSize,
+                        selectedStyle,
+                        selectedVersion,
+                        selectedColor,
+                        price,
+                      },
+                      quantity
+                    );
+                    message.success("Đã thêm vào giỏ hàng!");
+                  }}
+                >
+                  Thêm vào giỏ hàng
+                </Button>
+              )}
+            </div>
+          </div>
           <div className="border border-gray-200 rounded-lg p-4 w-[400px]  bg-white">
             <div className="flex items-center gap-2 mb-3 ">
               <img src={delevery} alt="Giao hàng" className="w-5 h-5" />
