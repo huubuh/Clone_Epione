@@ -11,6 +11,7 @@ import {
   Select,
   List,
   Divider,
+  Table,
 } from "antd";
 import axios from "axios";
 import { useAuth } from "../context/AuthContext";
@@ -27,6 +28,8 @@ const Profile = () => {
   const [showAddressModal, setShowAddressModal] = useState(false);
   const [addressForm] = Form.useForm();
   const [addressLoading, setAddressLoading] = useState(false);
+  const [selectedOrder, setSelectedOrder] = useState(null);
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
   useEffect(() => {
     const fetchUserInfo = async () => {
@@ -87,6 +90,11 @@ const Profile = () => {
     } finally {
       setAddressLoading(false);
     }
+  };
+
+  const showOrderDetails = (order) => {
+    setSelectedOrder(order);
+    setIsModalVisible(true);
   };
 
   if (loading) {
@@ -270,11 +278,17 @@ const Profile = () => {
               dataSource={userInfo.orders || []}
               locale={{ emptyText: "Chưa có đơn hàng nào" }}
               renderItem={(order) => (
-                <List.Item>
+                <List.Item
+                  actions={[
+                    <Button type="link" onClick={() => showOrderDetails(order)}>
+                      Xem chi tiết
+                    </Button>,
+                  ]}
+                >
                   <div>
                     <b>Mã đơn:</b> {order.id} <br />
                     <b>Ngày đặt:</b> {order.date} <br />
-                    <b>Tổng tiền:</b> {order.total} <br />
+                    <b>Tổng tiền:</b> {order.total.toLocaleString("vi-VN")}đ
                   </div>
                 </List.Item>
               )}
@@ -282,6 +296,81 @@ const Profile = () => {
           </div>
         )}
       </div>
+
+      <Modal
+        title="Chi tiết đơn hàng"
+        open={isModalVisible}
+        onCancel={() => setIsModalVisible(false)}
+        footer={null}
+        width={800}
+      >
+        {selectedOrder && (
+          <div>
+            <Descriptions title="Thông tin đơn hàng" bordered>
+              <Descriptions.Item label="Mã đơn">
+                {selectedOrder.id}
+              </Descriptions.Item>
+              <Descriptions.Item label="Ngày đặt">
+                {selectedOrder.date}
+              </Descriptions.Item>
+            </Descriptions>
+
+            <div className="mt-6">
+              <h3 className="text-lg font-semibold mb-4">Sản phẩm đã đặt</h3>
+              <Table
+                dataSource={selectedOrder.items}
+                rowKey="id"
+                pagination={false}
+                columns={[
+                  {
+                    title: "Sản phẩm",
+                    dataIndex: "name",
+                    key: "name",
+                    render: (text, record) => (
+                      <div className="flex items-center">
+                        <img
+                          src={record.image}
+                          alt={text}
+                          className="w-16 h-16 object-cover mr-4"
+                        />
+                        <span>{text}</span>
+                      </div>
+                    ),
+                  },
+                  {
+                    title: "Số lượng",
+                    dataIndex: "quantity",
+                    key: "quantity",
+                  },
+                  {
+                    title: "Đơn giá",
+                    dataIndex: "price",
+                    key: "price",
+                    render: (price) => `${price.toLocaleString("vi-VN")}đ`,
+                  },
+                  {
+                    title: "Thành tiền",
+                    key: "subtotal",
+                    render: (_, record) =>
+                      `${(record.price * record.quantity).toLocaleString(
+                        "vi-VN"
+                      )}đ`,
+                  },
+                ]}
+              />
+            </div>
+
+            <div className="mt-6 text-right">
+              <p className="text-lg font-semibold">
+                Tổng tiền:{" "}
+                <span className="text-red-500">
+                  {selectedOrder.total.toLocaleString("vi-VN")}đ
+                </span>
+              </p>
+            </div>
+          </div>
+        )}
+      </Modal>
       <Footer />
     </>
   );

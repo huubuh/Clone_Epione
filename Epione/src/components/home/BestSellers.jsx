@@ -56,9 +56,6 @@ const BestSellers = () => {
           <ProductCard product={product} />
         ))}
       </div>
-      <Button className="mt-4 cursor-pointer" icon={<ArrowRightOutlined />}>
-        Xem tất cả
-      </Button>
     </section>
   );
 };

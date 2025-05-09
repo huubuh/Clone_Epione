@@ -2,6 +2,7 @@ import Logo from "../../assets/images/image_16.png";
 import DeskBanner from "../../assets/images/highlight-delight.webp";
 import Button from "../../components/ui/Button";
 import { ArrowRightOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 const DeskFeature = () => {
   return (
@@ -56,9 +57,12 @@ const DeskFeature = () => {
               </div>
             </li>
           </ul>
-
           <div className="mt-10">
-            <Button icon={<ArrowRightOutlined />}>Xem tất cả tính năng</Button>
+            <Link to="/products/delightdesk">
+              <Button icon={<ArrowRightOutlined />} className="cursor-pointer">
+                Xem tất cả tính năng
+              </Button>
+            </Link>
           </div>
         </div>
 

@@ -114,7 +114,10 @@ const CompareSection = ({ type }) => {
               {item.price.toLocaleString()} VND
             </p>
             <Link to={`/products/${item.slug}`} className="flex justify-center">
-              <Button variant="primary" className=" w-[120px] h-[44px]">
+              <Button
+                variant="primary"
+                className=" w-[120px] h-[44px] cursor-pointer"
+              >
                 Mua ngay
               </Button>
             </Link>

@@ -35,7 +35,7 @@ const IntroSection = ({ type }) => {
       <h2 className="text-4xl font-semibold mb-5 mt-10 text-center">
         {introContent.title}
       </h2>
-      <div className="relative max-w-4xl mx-auto aspect-video">
+      <div className="relative max-w-4xl mx-auto aspect-video ">
         {showVideo ? (
           // Hiển thị video khi bấm nút Play
           <iframe
@@ -55,7 +55,7 @@ const IntroSection = ({ type }) => {
             />
             <button
               onClick={() => setShowVideo(true)}
-              className="absolute inset-0 flex items-center justify-center"
+              className="absolute inset-0 flex items-center justify-center cursor-pointer"
             >
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-gray-100 transition-colors">
                 <svg

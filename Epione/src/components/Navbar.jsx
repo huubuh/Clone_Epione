@@ -98,7 +98,7 @@ const NavBar = () => {
       key: "dashboard",
       label: "Admin Dashboard",
       icon: <DashboardOutlined />,
-      onClick: () => navigate("/admin/dashboard"),
+      onClick: () => navigate("/admin"),
     });
   }
 

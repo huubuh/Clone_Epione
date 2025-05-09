@@ -10,20 +10,32 @@
     },
     {
       "id": "2",
-      "email": "LuongHoc1011@gmail.com",
+      "email": "luonghoc1011@gmail.com",
       "password": "user123",
       "role": "user",
       "username": "Huy",
-      "lastName": "Nguyen Van"
+      "lastName": "Nguyen Van",
+      "addresses": [
+        {
+          "firstName": "Huy",
+          "lastName": "Nguyen",
+          "address": "Bình Thạnh",
+          "city": "Hồ Chí Minh",
+          "country": "Việt Nam",
+          "phone": "0869053448",
+          "isDefault": true,
+          "id": "1746811104663"
+        }
+      ],
+      "orders": []
     }
   ],
   "chairs": [
     {
-      "id": 1,
+      "id": "1",
       "slug": "fortischair",
       "name": "Ghế công thái học Epione FortisChair",
       "price": 3890000,
-
       "image": "/assets/images/chair/FortisChair/ghe-cong-thai-hoc-epione-fortischair-293838.webp",
       "images": [
         "/assets/images/chair/FortisChair/ghe-cong-thai-hoc-epione-fortischair-293838.webp",
@@ -31,7 +43,6 @@
         "/assets/images/chair/FortisChair/ghe-cong-thai-hoc-epione-fortischair-708862.webp",
         "/assets/images/chair/FortisChair/ghe-cong-thai-hoc-epione-fortischair-363663.webp"
       ],
-
       "rating": 4,
       "quantity": 10,
       "warranty": "2 năm",
@@ -74,7 +85,7 @@
       }
     },
     {
-      "id": 2,
+      "id": "2",
       "slug": "elyschair",
       "name": "Ghế công thái học Epione ElysChair",
       "price": 2590000,
@@ -123,7 +134,6 @@
             "/assets/images/chair/ElysChair/ghe-cong-thai-hoc-epione-elyschair-343958.webp",
             "/assets/images/chair/ElysChair/ghe-cong-thai-hoc-epione-elyschair-737197.webp"
           ],
-          
           "quantity": 2
         }
       ],
@@ -163,7 +173,7 @@
       }
     },
     {
-      "id": 3,
+      "id": "3",
       "slug": "easychair-20",
       "name": "Ghế công thái học Epione EasyChair 2.0",
       "price": 6690000,
@@ -234,7 +244,7 @@
       }
     },
     {
-      "id": 4,
+      "id": "4",
       "slug": "fortischair-20",
       "name": "Ghế công thái học Epione FortisChair 2.0",
       "price": 4590000,
@@ -328,12 +338,12 @@
       }
     },
     {
-      "id": 5,
+      "id": "5",
       "slug": "aliuschair",
       "name": "Ghế công thái học Epione AliusChair",
       "price": 13990000,
       "image": "/assets/images/chair/AliusChair/ghe-cong-thai-hoc-epione-aliuschair-6d-all-black-front.webp",
-      "rating": 5,
+      "rating": 4,
       "warranty": "5 năm",
       "variants": [
         {
@@ -403,7 +413,7 @@
   ],
   "desks": [
     {
-      "id": 101,
+      "id": "101",
       "slug": "smartdesk-mono",
       "name": "Bàn nâng hạ Epione SmartDesk Mono",
       "price": 3990000,
@@ -486,7 +496,7 @@
       }
     },
     {
-      "id": 102,
+      "id": "102",
       "slug": "smartdesk-lite-20",
       "name": "Bàn nâng hạ Epione SmartDesk Lite 2.0",
       "price": 5990000,
@@ -635,7 +645,7 @@
       }
     },
     {
-      "id": 103,
+      "id": "103",
       "slug": "smartdesk-pro-20",
       "name": "Bàn nâng hạ Epione SmartDesk Pro 2.0",
       "price": 8690000,
@@ -785,7 +795,7 @@
       }
     },
     {
-      "id": 104,
+      "id": "104",
       "slug": "delightdesk",
       "name": "Bàn nâng hạ Epione DelightDesk",
       "price": 10590000,
@@ -980,7 +990,7 @@
       }
     },
     {
-      "id": 105,
+      "id": "105",
       "slug": "smartdesk-frame",
       "name": "Khung bàn nâng hạ Epione SmartDesk",
       "price": 4990000,
@@ -1009,7 +1019,7 @@
   ],
   "accessories": [
     {
-      "id": 201,
+      "id": "201",
       "slug": "deskcasters",
       "name": "Bánh xe bàn nâng hạ Epione DeskCasters",
       "price": 390000,
@@ -1033,7 +1043,7 @@
       "warranty": "6 tháng"
     },
     {
-      "id": 202,
+      "id": "202",
       "slug": "cabletray",
       "name": "Khay đi dây Epione CableTray",
       "price": 219000,
@@ -1073,7 +1083,7 @@
       "warranty": "6 tháng"
     },
     {
-      "id": 203,
+      "id": "203",
       "slug": "essentials-arm",
       "name": "Giá đỡ màn hình Epione Essentials Arm",
       "price": 790000,
@@ -1103,7 +1113,7 @@
           "color": "All Black",
           "price": 1390000,
           "images": [
-            "/assets/images/accessories/essentials-arm-duo-all-black.webp"
+            "/assets/images/accessories/EssentialsArm/essentials-arm-duo-all-black.webp"
           ],
           "quantity": 2
         },
@@ -1136,7 +1146,7 @@
       "warranty": "1 năm"
     },
     {
-      "id": 204,
+      "id": "204",
       "slug": "cpuholder",
       "name": "Giá đỡ máy tính Epione CPUHolder",
       "price": 890000,
@@ -1160,7 +1170,7 @@
       "warranty": "6 tháng"
     },
     {
-      "id": 205,
+      "id": "205",
       "slug": "delight-arm",
       "name": "Giá đỡ màn hình Epione Delight Arm",
       "price": 2290000,
@@ -1171,7 +1181,7 @@
           "color": "All Black",
           "price": 2290000,
           "images": [
-            "/assets/images/accessories/DelightArm/delight-arm-all-black.webp"
+            "/assets/images/accessories/DelightArm/delight-arm.webp"
           ],
           "quantity": 10
         }
@@ -1194,7 +1204,7 @@
       "warranty": "6 tháng"
     },
     {
-      "id": 206,
+      "id": "206",
       "slug": "monitor-stand-20",
       "name": "Kệ màn hình Epione MonitorStand 2.0",
       "price": 869000,
@@ -1247,7 +1257,7 @@
       "warranty": "6 tháng"
     },
     {
-      "id": 207,
+      "id": "207",
       "slug": "essentials-pad",
       "name": "Tấm lót bàn Epione Essentials Pad",
       "price": 790000,
@@ -1262,7 +1272,7 @@
       "quantity": 10
     },
     {
-      "id": 208,
+      "id": "208",
       "slug": "ergo-ease",
       "name": "Kê chân công thái học Epione ErgoEase",
       "price": 490000,
@@ -1274,7 +1284,7 @@
       "quantity": 10
     },
     {
-      "id": 209,
+      "id": "209",
       "slug": "cabinet-w400",
       "name": "Tủ Epione Essentials Cabinet W400",
       "price": 2190000,
@@ -1296,7 +1306,7 @@
       "warranty": "1 năm"
     },
     {
-      "id": 210,
+      "id": "210",
       "slug": "flexback",
       "name": "Tựa lưng công thái học Epione FlexBack",
       "price": 950000,
@@ -1309,7 +1319,7 @@
       "quantity": 10
     },
     {
-      "id": 211,
+      "id": "211",
       "slug": "footrest",
       "name": "Kê chân ghế",
       "price": 390000,
@@ -1320,7 +1330,9 @@
           "style": "EasyChair",
           "name_variant": "Kê chân ghế cho EasyChair",
           "price": 1120000,
-          "images": ["/assets/images/accessories/ke-chan-ghe-500097.webp"],
+          "images": [
+            "/assets/images/accessories/KeChan/ke-chan-ghe-500097.webp"
+          ],
           "quantity": 5
         },
         {
@@ -1335,7 +1347,7 @@
       ]
     },
     {
-      "id": 212,
+      "id": "212",
       "slug": "flexishelf",
       "name": "Kệ đa năng Epione Essentials Flexi Shelf",
       "price": 1800000,
@@ -1370,7 +1382,7 @@
       "warranty": "1 năm"
     },
     {
-      "id": 213,
+      "id": "213",
       "slug": "cabinet-w350",
       "name": "Tủ Epione Essentials Cabinet W350",
       "price": 1400000,

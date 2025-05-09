@@ -22,6 +22,7 @@ const Register = () => {
       }
 
       const newUser = {
+        id: Date.now().toString(),
         email: values.email,
         password: values.password,
         role: "user",

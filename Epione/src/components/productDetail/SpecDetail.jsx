@@ -12,7 +12,7 @@ const SpecDetail = ({ specs, specImage, name }) => {
     );
 
   return (
-    <div className="my-8">
+    <div className="my-8 max-w-4xl mx-auto">
       <h2 className="text-4xl font-bold text-center mb-6">Thông số kỹ thuật</h2>
       <div className="flex  flex-col md:flex-row gap-8 bg-[#efefef] rounded-lg p-6">
         <div className="md:w-1/2 w-full">
@@ -37,9 +37,7 @@ const SpecDetail = ({ specs, specImage, name }) => {
               ) : (
                 Object.entries(specs).map(([group, values]) => (
                   <div key={group} className="mb-4">
-                    <div className="font-semibold text-base mb-1 ]">
-                      {group}
-                    </div>
+                    <div className="font-semibold text-base mb-1 ">{group}</div>
                     <table className="w-full text-sm border-collapse">
                       <tbody>
                         {typeof values === "object" &&
@@ -66,8 +64,8 @@ const SpecDetail = ({ specs, specImage, name }) => {
           {specImage && (
             <img
               src={specImage}
-              alt={`Thông số kỹ thuật ${name || "sản phẩm"}`}
-              className="rounded-lg "
+              alt={"Thông số kỹ thuật"}
+              className="rounded-lg  max-w-full max-h-full "
             />
           )}
         </div>

@@ -8,7 +8,6 @@ import Register from "../pages/auth/Register";
 import ForgotPassword from "../pages/auth/ForgotPassword";
 import ProtectedRoute from "../components/ProtectedRoute";
 
-import AdminDashboard from "../pages/admin/Dashboard";
 import Profile from "../pages/Profile";
 
 const PublicRoutes = () => {
@@ -26,14 +25,6 @@ const PublicRoutes = () => {
         element={
           <ProtectedRoute>
             <Profile />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/admin/dashboard"
-        element={
-          <ProtectedRoute requiredRole="admin">
-            <AdminDashboard />
           </ProtectedRoute>
         }
       />

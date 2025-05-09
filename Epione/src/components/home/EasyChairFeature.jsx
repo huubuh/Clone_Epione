@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ChairBanner from "../../assets/images/highlight-easychair.webp";
 import Logo from "../../assets/images/image_16.png";
 import Button from "../../components/ui/Button";
@@ -69,9 +70,12 @@ const EasyChairFeature = () => {
               </div>
             </li>
           </ul>
-
           <div className="mt-10">
-            <Button icon={<ArrowRightOutlined />}>Xem tất cả tính năng</Button>
+            <Link to="/products/easychair-20">
+              <Button icon={<ArrowRightOutlined />} className="cursor-pointer">
+                Xem tất cả tính năng
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

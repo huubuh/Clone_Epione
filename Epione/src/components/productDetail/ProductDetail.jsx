@@ -284,7 +284,7 @@ const ProductDetail = () => {
           </h1>
           <div className="flex items-center mb-4">
             <RatingStars rating={product.rating} />
-            <span className="ml-2 text-gray-600">
+            <span className="ml-2 text-gray-600 text-[12px]">
               ({product.rating || 0} đánh giá)
             </span>
           </div>
@@ -507,11 +507,8 @@ const ProductDetail = () => {
           <div className="border border-gray-200 rounded-lg p-4 w-[400px] bg-white mt-4 flex flex-col">
             <div className="flex items-center gap-2 mb-1">
               <img src={shield} alt="wrappty" className="w-5 h-5" />
-              <span className="font-semibold text-[12px]">
-                Bảo hành
-                {product.warranty ||
-                  product.specs?.["Chính sách hậu mãi"]?.["Bảo hành"] ||
-                  "liên hệ"}
+              <span className=" font-semibold text-[12px]">
+                Bảo hành {product.warranty}
               </span>
             </div>
             <span className="text-[13px] text-gray-600">

@@ -105,7 +105,7 @@ const BenefitsSection = ({ type }) => {
         </div>
 
         {/* Hình ảnh ở giữa */}
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-10">
           <img
             src={content.image}
             alt={content.title}
