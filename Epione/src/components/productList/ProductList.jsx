@@ -59,7 +59,7 @@ const ProductList = ({ type }) => {
         <div className="flex justify-center mt-6 gap-2">
           <button
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-            className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300"
+            className="px-4 py-2 bg-white text-gray-400 rounded-lg cursor-pointer "
             disabled={currentPage === 1}
           >
             <LeftOutlined />
@@ -68,10 +68,10 @@ const ProductList = ({ type }) => {
             <button
               key={index}
               onClick={() => setCurrentPage(index + 1)}
-              className={`px-4 py-2 rounded-lg ${
+              className={`px-4 py-2 rounded-lg border ${
                 currentPage === index + 1
-                  ? "bg-blue-600 text-white"
-                  : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                  ? "bg-white text-[#1106a7] border-[#1106a7]"
+                  : "bg-white text-gray-500 border-gray-300 hover:text-[#1106a7] hover:border-[#1106a7] cursor-pointer"
               }`}
             >
               {index + 1}
@@ -81,7 +81,7 @@ const ProductList = ({ type }) => {
             onClick={() =>
               setCurrentPage((prev) => Math.min(prev + 1, totalPages))
             }
-            className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300"
+            className="px-4 py-2 bg-white text-gray-400 rounded-lg cursor-pointer"
             disabled={currentPage === totalPages}
           >
             <RightOutlined />

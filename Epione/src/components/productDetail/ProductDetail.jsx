@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Thumbs, EffectFade } from "swiper/modules";
 // import truct from "../../assets/images/image_4.png";
 import delevery from "../../assets/images/image_4_2.png";
-// import shield from "../../assets/images/shield-tick.png";
+import shield from "../../assets/images/shield-tick.png";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -18,6 +18,7 @@ import "./ProductDetail.css";
 import { useCart } from "../../context/CartContext";
 import { useAuth } from "../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import SpecDetail from "./SpecDetail";
 
 const ProductDetail = () => {
   const { slug } = useParams();
@@ -314,7 +315,7 @@ const ProductDetail = () => {
                       } ${!isColorInStock ? "line-through opacity-60" : ""}`}
                     >
                       <span
-                        className="w-4 h-4 rounded-full"
+                        className="w-4 h-4 border border-gray-400 rounded-full"
                         style={{
                           backgroundColor: color.toLowerCase().includes("black")
                             ? "#000"
@@ -502,8 +503,32 @@ const ProductDetail = () => {
               <span className="font-semibold text-black">Miễn phí</span>
             </div>
           </div>
+
+          <div className="border border-gray-200 rounded-lg p-4 w-[400px] bg-white mt-4 flex flex-col">
+            <div className="flex items-center gap-2 mb-1">
+              <img src={shield} alt="wrappty" className="w-5 h-5" />
+              <span className="font-semibold text-[12px]">
+                Bảo hành
+                {product.warranty ||
+                  product.specs?.["Chính sách hậu mãi"]?.["Bảo hành"] ||
+                  "liên hệ"}
+              </span>
+            </div>
+            <span className="text-[13px] text-gray-600">
+              Xem chi tiết chính sách bảo hành
+              <a className="text-[#4f46e5] underline hover:text-[#1106a7]">
+                tại đây
+              </a>
+            </span>
+          </div>
         </div>
       </div>
+
+      <SpecDetail
+        specs={product.specs}
+        specImage={product.specImage}
+        name={product.name}
+      />
     </div>
   );
 };

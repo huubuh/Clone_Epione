@@ -15,8 +15,6 @@
       "role": "user",
       "username": "Huy",
       "lastName": "Nguyen Van"
-   
-  
     }
   ],
   "chairs": [
@@ -25,6 +23,7 @@
       "slug": "fortischair",
       "name": "Ghế công thái học Epione FortisChair",
       "price": 3890000,
+
       "image": "/assets/images/chair/FortisChair/ghe-cong-thai-hoc-epione-fortischair-293838.webp",
       "images": [
         "/assets/images/chair/FortisChair/ghe-cong-thai-hoc-epione-fortischair-293838.webp",
@@ -32,8 +31,47 @@
         "/assets/images/chair/FortisChair/ghe-cong-thai-hoc-epione-fortischair-708862.webp",
         "/assets/images/chair/FortisChair/ghe-cong-thai-hoc-epione-fortischair-363663.webp"
       ],
-      "rating": 5,
-      "quantity": 10
+
+      "rating": 4,
+      "quantity": 10,
+      "warranty": "2 năm",
+      "specImage": "/assets/images/chair/FortisChair/thong-so-ky-thuat-FortisChairx5.webp",
+      "specs": {
+        "Cơ chế vận hành": {
+          "Bộ máy": "Basicfunction",
+          "Tỳ hơi điều chỉnh độ cao": "Piston Class 4",
+          "Cơ chế kháng lực": "Self-Tensioning",
+          "Điều chỉnh kháng lực": "Tự động",
+          "Khóa ngả lưng": "TrueTilt 3 nấc",
+          "Cơ chế điều chỉnh lưng": "Bản lưng độc lập ALLS",
+          "Góc nghiêng ngả lưng": "18°"
+        },
+        "Cơ chế tiếp xúc": {
+          "Bề mặt mâm ghế": "Lưới BreathMesh",
+          "Bề mặt lưng ghế": "Lưới BreathMesh",
+          "Tựa đầu": "Linked-Fit",
+          "Bệ tỳ tay": "Kerta 3D"
+        },
+        "Chân ghế": {
+          "Hỗ trợ kê chân rời": "Có",
+          "Chất liệu chân ghế": "Hợp kim nhôm",
+          "Bánh xe": "50 mm Polyurethane"
+        },
+        "Chứng chỉ chất lượng": {
+          "Tiêu chuẩn ty hơi": "Chứng chỉ ANSI/BIFMA X5.1"
+        },
+        "Tải trọng & kích thước": {
+          "Tải trọng khuyến nghị": "100 kg",
+          "Tải trọng tối đa": "140 kg",
+          "Chiều cao Max": "1270 mm",
+          "Chiều cao Min": "1170 mm",
+          "Chiều ngang chân ghế": "660 mm",
+          "Khối lượng tiêu chuẩn": "18.6 kg"
+        },
+        "Chính sách hậu mãi": {
+          "Bảo hành": "2 năm"
+        }
+      }
     },
     {
       "id": 2,
@@ -41,6 +79,8 @@
       "name": "Ghế công thái học Epione ElysChair",
       "price": 2590000,
       "image": "/assets/images/chair/ElysChair/ghe-cong-thai-hoc-epione-elyschair-125084.webp",
+      "rating": 5,
+      "warranty": "2 năm",
       "variants": [
         {
           "style": "không kê đầu",
@@ -83,9 +123,44 @@
             "/assets/images/chair/ElysChair/ghe-cong-thai-hoc-epione-elyschair-343958.webp",
             "/assets/images/chair/ElysChair/ghe-cong-thai-hoc-epione-elyschair-737197.webp"
           ],
+          
           "quantity": 2
         }
-      ]
+      ],
+      "specImage": "/assets/images/chair/ElysChair/thong-so-ky-thuat-ElysChairx5_e7fe2400-5274-4bbf-8e2f-51d14f0bf235.webp",
+      "specs": {
+        "Cơ chế vận hành": {
+          "Bộ máy": "BasicFunction",
+          "Khóa ngả lưng": "TrueTilt 3 nấc",
+          "Tỳ hơi điều chỉnh độ cao": "Piston Class 4",
+          "Cơ chế kháng lực": "Xoay vô cấp",
+          "Góc nghiêng ngả lưng": "20°"
+        },
+        "Cơ chế tiếp xúc": {
+          "Tựa đầu": "Pro-Fit 3D R",
+          "Bệ tỳ tay": "Kerta",
+          "Bề mặt mâm ghế": "ElasticFoam Seat Cushion",
+          "Bề mặt lưng": "Lưới Endura BreathMesh"
+        },
+        "Chân ghế": {
+          "Bề mặt chân ghế": "Chromium, Kim loại",
+          "Hỗ trợ kê chân rời": "Không",
+          "Bánh xe": "50 mm Polyurethane"
+        },
+        "Chứng chỉ chất lượng": {
+          "Tiêu chuẩn ty hơi": "Chứng chỉ ANSI/BIFMA X5.1"
+        },
+        "Tải trọng & kích thước": {
+          "Tải trọng khuyến nghị": "80 kg",
+          "Tải trọng tối đa": "140 kg",
+          "Chiều cao Max": "1165 mm",
+          "Chiều cao Min": "1085 mm",
+          "Chiều ngang chân ghế": "690 mm"
+        },
+        "Chính sách hậu mãi": {
+          "Bảo hành": "3 năm"
+        }
+      }
     },
     {
       "id": 3,
@@ -94,6 +169,7 @@
       "price": 6690000,
       "image": "/assets/images/chair/EasyChair20/ghe-cong-thai-hoc-epione-easychair-20-582610.webp",
       "rating": 5,
+      "warranty": "2 năm",
       "variants": [
         {
           "color": "All Black",
@@ -117,7 +193,45 @@
           ],
           "quantity": 4
         }
-      ]
+      ],
+      "specImage": "/assets/images/chair/EasyChair20/thong-so-ky-thuat-EasyChair-25.webp",
+      "specs": {
+        "Cơ chế vận hành": {
+          "Bộ máy": "Multifunction",
+          "Piston": "Class 4 Samhongsa",
+          "Cơ chế kháng lực": "4 nấc",
+          "Điều chỉnh kháng lực": "Tension Control",
+          "Khóa ngả lưng": "TrueTilt 3 nấc",
+          "Cơ chế điều chỉnh lưng": "Bản lưng ATLAS",
+          "Góc nghiêng ngả lưng": "22°"
+        },
+        "Cơ chế tiếp xúc": {
+          "Bề mặt mâm ghế": "Lưới Krall + Roth (Đức)",
+          "Bề mặt tựa": "Lưới Krall + Roth (Đức)",
+          "Tựa đầu": "Pro-Fit 3D",
+          "Bệ tỳ tay": "Kerta 3D"
+        },
+        "Chân ghế": {
+          "Hỗ trợ kê chân rời": "Có",
+          "Chất liệu chân ghế": "Hợp kim nhôm",
+          "Bánh xe": "60 mm Polyurethane"
+        },
+        "Chứng chỉ chất lượng": {
+          "Tiêu chuẩn ty hơi": "Chứng chỉ ANSI/BIFMA X5.1",
+          "Tiêu chuẩn an toàn": "OEKO-TEX STANDARD 100"
+        },
+        "Tải trọng & kích thước": {
+          "Tải trọng khuyến nghị": "120 kg",
+          "Tải trọng tối đa": "150 kg",
+          "Chiều cao Max": "1295 mm",
+          "Chiều cao Min": "1205 mm",
+          "Chiều ngang chân ghế": "660 mm"
+        },
+        "Chính sách hậu mãi": {
+          "Bảo hành": "3 năm",
+          "EasyCare": "Miễn phí 3 lần bảo dưỡng tại nhà (HCM)"
+        }
+      }
     },
     {
       "id": 4,
@@ -126,6 +240,7 @@
       "price": 4590000,
       "image": "/assets/images/chair/FortisChair20/ghe-cong-thai-hoc-epione-fortischair-2-black-pro-front.webp",
       "rating": 5,
+      "warranty": "2 năm",
       "variants": [
         {
           "version": "bản thường",
@@ -173,7 +288,44 @@
           ],
           "quantity": 2
         }
-      ]
+      ],
+      "specImage": "/assets/images/chair/FortisChair20/ghe-cong-thai-hoc-epione-fortischair-2-kich-thuoc.webp",
+      "specs": {
+        "Cơ chế vận hành": {
+          "Bộ máy": "Multifunction",
+          "Piston": "Class 4 Samhongsa",
+          "Cơ chế kháng lực": "Self-Tensioning",
+          "Điều chỉnh kháng lực": "Tự động",
+          "Khóa ngả lưng": "TrueTilt 3 nấc",
+          "Cơ chế điều chỉnh lưng": "Bản lưng độc lập Kirin",
+          "Góc nghiêng ngả lưng": "22°"
+        },
+        "Cơ chế tiếp xúc": {
+          "Bề mặt mâm ghế": "Lưới Hitex",
+          "Bề mặt lưng ghế": "Lưới Hitex",
+          "Tựa đầu": "Pro-Fit 4D",
+          "Bệ tỳ tay": "Kerta 3D / 5D"
+        },
+        "Chân ghế": {
+          "Hỗ trợ kê chân rời": "Có",
+          "Chất liệu chân ghế": "Hợp kim nhôm",
+          "Bánh xe": "50 mm Polyurethane"
+        },
+        "Chứng chỉ chất lượng": {
+          "Tiêu chuẩn ty hơi": "Chứng chỉ ANSI/BIFMA X5.1"
+        },
+        "Tải trọng & kích thước": {
+          "Tải trọng khuyến nghị": "100 kg",
+          "Tải trọng tối đa": "140 kg",
+          "Chiều cao Max": "1460 mm",
+          "Chiều cao Min": "1110 mm",
+          "Chiều ngang chân ghế": "690 mm"
+        },
+        "Chính sách hậu mãi": {
+          "Bảo hành": "2 năm",
+          "EasyCare": "Miễn phí 3 lần bảo dưỡng bản Pro (HCM)"
+        }
+      }
     },
     {
       "id": 5,
@@ -182,6 +334,7 @@
       "price": 13990000,
       "image": "/assets/images/chair/AliusChair/ghe-cong-thai-hoc-epione-aliuschair-6d-all-black-front.webp",
       "rating": 5,
+      "warranty": "5 năm",
       "variants": [
         {
           "style": "Kê tay 5D",
@@ -207,7 +360,45 @@
           ],
           "quantity": 5
         }
-      ]
+      ],
+      "specImage": "/assets/images/chair/thong-so-ky-thuat-AliusChairx5.webp",
+      "specs": {
+        "Cơ chế vận hành": {
+          "Bộ máy": "Multifunction",
+          "Piston": "Class 4 Samhongsa",
+          "Cơ chế kháng lực": "4 nấc",
+          "Điều chỉnh kháng lực": "Tension Control",
+          "Khóa ngả lưng": "TrueTilt 4 nấc",
+          "Cơ chế điều chỉnh lưng": "Bản lưng CloverFit",
+          "Góc nghiêng ngả lưng": "22°"
+        },
+        "Cơ chế tiếp xúc": {
+          "Bề mặt mâm ghế": "Lưới FlexMesh",
+          "Bề mặt lưng": "Lưới FlexMesh + Nhựa TPU",
+          "Tựa đầu": "Pro-Fit 3D",
+          "Bệ tỳ tay": "Kerta 5D"
+        },
+        "Chân ghế": {
+          "Hỗ trợ kê chân rời": "Tích hợp sẵn",
+          "Chất liệu chân ghế": "Hợp kim nhôm",
+          "Bánh xe": "60 mm Polyurethane"
+        },
+        "Chứng chỉ chất lượng": {
+          "Tiêu chuẩn ty hơi": "Chứng chỉ ANSI/BIFMA X5.1"
+        },
+        "Tải trọng & kích thước": {
+          "Tải trọng khuyến nghị": "120 kg",
+          "Tải trọng tối đa": "150 kg",
+          "Chiều cao Max": "1300 mm",
+          "Chiều cao Min": "1060 mm",
+          "Chiều ngang chân ghế": "660 mm",
+          "Khối lượng tiêu chuẩn": "≈ 21 kg"
+        },
+        "Chính sách hậu mãi": {
+          "Bảo hành": "5 năm",
+          "EasyCare": "Miễn phí 3 lần bảo dưỡng tại nhà (HCM)"
+        }
+      }
     }
   ],
   "desks": [
@@ -217,7 +408,8 @@
       "name": "Bàn nâng hạ Epione SmartDesk Mono",
       "price": 3990000,
       "image": "/assets/images/desk/SmartDeskMono/epione-smartdesk-mono-white-corner.webp",
-      "rating": 0,
+      "rating": 5,
+      "warranty": "2 năm cho khung và các bộ phận máy",
       "variants": [
         {
           "size": "1.2m x 0.6m",
@@ -252,7 +444,46 @@
           ],
           "quantity": 4
         }
-      ]
+      ],
+      "specImage": "/assets/images/desk/SmartDeskMono/kich-thuoc-smartdesk-mono.webp",
+      "specs": {
+        "Tính năng thông minh": {
+          "Cơ chế chống va chạm": "Anti-Collision Tech",
+          "Bảng điều khiển": "Smart Controller",
+          "Bộ nhớ vị trí": "4 vị trí"
+        },
+        "Động cơ": {
+          "Số động cơ": "1",
+          "Nguồn điện động cơ": "24 V - 6 A",
+          "Vận tốc": "15 mm/s",
+          "Độ ồn": "~50 dB"
+        },
+        "Khung bàn": {
+          "Màu sắc khung": "All Black",
+          "Chất liệu": "Thép",
+          "Nguồn điện": "110 V - 240 V",
+          "Bề ngang chân": "680 mm",
+          "Bề mặt": "Sơn tĩnh điện",
+          "Bước chân bàn": "2-Stage"
+        },
+        "Tải trọng & chiều cao": {
+          "Mức nâng tối đa": "118 cm",
+          "Mức hạ tối thiểu": "73 cm",
+          "Tải trọng khuyến nghị": "60 kg"
+        },
+        "Mặt bàn": {
+          "Thiết kế": "Seamless",
+          "Màu sắc": "Classic Black, Pure White, OAK",
+          "Viền cạnh": "Ván Plywood (ABS)",
+          "Kích thước": "1.2 m x 0.6 m",
+          "Bề dày": "25 mm",
+          "Chất liệu": "Gỗ MFC phủ Melamine",
+          "Cạnh": "Vuông"
+        },
+        "Chính sách hậu mãi": {
+          "Bảo hành": "2 năm cho khung và các bộ phận máy"
+        }
+      }
     },
     {
       "id": 102,
@@ -261,6 +492,7 @@
       "price": 5990000,
       "image": "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-corner-white.webp",
       "rating": 5,
+      "warranty": "3 năm cho khung và các bộ phận máy",
       "variants": [
         {
           "size": "1.2m x 0.6m",
@@ -361,7 +593,46 @@
           ],
           "quantity": 1
         }
-      ]
+      ],
+      "specImage": "/assets/images/desk/SmartDesk20/thong-so-ky-thuat-SmartDesk_Lite_2.0x5.webp",
+      "specs": {
+        "Tính năng thông minh": {
+          "Cơ chế chống va chạm": "Anti-Collision Tech",
+          "Bảng điều khiển": "Smart Controller",
+          "Bộ nhớ vị trí": "4 vị trí"
+        },
+        "Động cơ": {
+          "Số động cơ": "2",
+          "Nguồn điện động cơ": "24 V - 6 A",
+          "Vận tốc": "25 mm/s",
+          "Độ ồn": "~50 dB"
+        },
+        "Khung bàn": {
+          "Màu sắc khung": "All Black",
+          "Chất liệu": "Thép",
+          "Nguồn điện": "110 V - 240 V",
+          "Bề ngang chân": "680 mm",
+          "Bề mặt": "Sơn tĩnh điện",
+          "Bước chân bàn": "2-Stage"
+        },
+        "Tải trọng & chiều cao": {
+          "Mức nâng tối đa": "119 cm",
+          "Mức hạ tối thiểu": "70 cm",
+          "Tải trọng khuyến nghị": "100 kg"
+        },
+        "Mặt bàn": {
+          "Thiết kế": "Seamless",
+          "Màu sắc": "Classic Black, Pure White",
+          "Viền cạnh": "Ván Plywood (ABS)",
+          "Kích thước": "1.2 m, 1.4 m, 1.6 m x 0.7 m",
+          "Bề dày": "25 mm",
+          "Chất liệu": "Gỗ MFC phủ Melamine",
+          "Cạnh": "Vuông"
+        },
+        "Chính sách hậu mãi": {
+          "Bảo hành": "3 năm cho khung và các bộ phận máy"
+        }
+      }
     },
     {
       "id": 103,
@@ -369,7 +640,8 @@
       "name": "Bàn nâng hạ Epione SmartDesk Pro 2.0",
       "price": 8690000,
       "image": "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-corner-white.webp",
-      "rating": 5,
+      "rating": 4,
+      "warranty": "5 năm cho khung và các bộ phận máy",
       "variants": [
         {
           "size": "1.2m x 0.6m",
@@ -470,7 +742,47 @@
           ],
           "quantity": 1
         }
-      ]
+      ],
+      "specImage": "/assets/images/desk/SmartDeskPro20/thong-so-ky-thuat-SmartDesk_Pro_2.0x5.webp",
+      "specs": {
+        "Tính năng thông minh": {
+          "Cơ chế chống va chạm": "Anti-Collision Tech",
+          "Bảng điều khiển": "1-Touch Controller",
+          "Bộ nhớ vị trí": "4 vị trí",
+          "Khoá điều khiển": "Smart Lock"
+        },
+        "Động cơ": {
+          "Số động cơ": "2",
+          "Nguồn điện động cơ": "24 V - 6 A",
+          "Vận tốc": "38 mm/s",
+          "Độ ồn": "~40 dB"
+        },
+        "Khung bàn": {
+          "Màu sắc khung": "All Black",
+          "Chất liệu": "Thép",
+          "Nguồn điện": "110 V - 240 V",
+          "Bề ngang chân": "680 mm",
+          "Bề mặt": "Sơn tĩnh điện",
+          "Bước chân bàn": "3-Stage"
+        },
+        "Tải trọng & chiều cao": {
+          "Mức nâng tối đa": "126 cm",
+          "Mức hạ tối thiểu": "60.5 cm",
+          "Tải trọng khuyến nghị": "125 kg"
+        },
+        "Mặt bàn": {
+          "Thiết kế": "Seamless",
+          "Màu sắc": "Classic Black, Pure White",
+          "Viền cạnh": "Ván Plywood (ABS)",
+          "Kích thước": "1.2 m, 1.4 m, 1.6 m x 0.7 m",
+          "Bề dày": "25 mm",
+          "Chất liệu": "Gỗ Melamine",
+          "Cạnh": "Vuông"
+        },
+        "Chính sách hậu mãi": {
+          "Bảo hành": "5 năm cho khung và các bộ phận máy"
+        }
+      }
     },
     {
       "id": 104,
@@ -478,7 +790,8 @@
       "name": "Bàn nâng hạ Epione DelightDesk",
       "price": 10590000,
       "image": "/assets/images/desk/DelightDesk/7-ban-nang-ha-epione-delightdesk-side-right-oak.webp",
-      "rating": 5,
+      "rating": 4,
+      "warranty": "5 năm cho khung và các bộ phận máy",
       "variants": [
         {
           "size": "1.5m x 0.7m",
@@ -624,7 +937,47 @@
           ],
           "quantity": 1
         }
-      ]
+      ],
+      "specImage": "/assets/imgaes/desk/DelightDesk/dthong-so-ky-thuatDelightDesk_5x_d08bdc68-56f2-4213-bb4a-3336824adb23.webp",
+      "specs": {
+        "Tính năng thông minh": {
+          "Cơ chế chống va chạm": "Anti-Collision Tech",
+          "Bảng điều khiển": "1-Touch Controller",
+          "Bộ nhớ vị trí": "4 vị trí",
+          "Khoá điều khiển": "Smart Lock"
+        },
+        "Động cơ": {
+          "Số động cơ": "2",
+          "Nguồn điện động cơ": "24 V - 6 A",
+          "Vận tốc": "38 mm/s",
+          "Độ ồn": "~40 dB"
+        },
+        "Khung bàn": {
+          "Màu sắc khung": "All Black",
+          "Chất liệu": "Thép",
+          "Nguồn điện": "110 V - 240 V",
+          "Bề ngang chân": "680 mm",
+          "Bề mặt": "Sơn tĩnh điện",
+          "Bước chân bàn": "3-Stage"
+        },
+        "Tải trọng & chiều cao": {
+          "Mức nâng tối đa": "126 cm",
+          "Mức hạ tối thiểu": "60.5 cm",
+          "Tải trọng khuyến nghị": "125 kg"
+        },
+        "Mặt bàn": {
+          "Thiết kế": "Delight",
+          "Màu sắc": "Classic Black, Pure White, OAK",
+          "Viền cạnh": "Ván Plywood (ABS)",
+          "Kích thước": "1.5 m × 0.8 m, 1.7 m × 0.8 m",
+          "Bề dày": "25 mm",
+          "Chất liệu": "Gỗ Melamine",
+          "Cạnh": "Vuông"
+        },
+        "Chính sách hậu mãi": {
+          "Bảo hành": "5 năm cho khung và các bộ phận máy"
+        }
+      }
     },
     {
       "id": 105,
@@ -633,6 +986,7 @@
       "price": 4990000,
       "image": "/assets/images/desk/Khung/khung-ban-nang-ha-epione-smartdesk-904753.webp",
       "rating": 0,
+      "warranty": "5 năm cho khung và các bộ phận máy",
       "variants": [
         {
           "style": "SmartDesk Lite 2.0",
@@ -666,8 +1020,17 @@
         "/assets/images/accessories/DeskCasters/banh-xe-ban-nang-ha-epione-deskcasters-639455.webp",
         "/assets/images/accessories/DeskCasters/banh-xe-ban-nang-ha-epione-deskcasters-332674.webp"
       ],
-      "rating": 0,
-      "quantity": 0
+      "rating": 4,
+      "quantity": 0,
+      "specs": {
+        "Kích thước": "Cao 5,08 cm • Rộng 5,84 cm",
+        "Đường kính bánh xe": "5 cm",
+        "Tải trọng khuyến nghị": "180 kg (bộ 4 bánh)",
+        "Chất liệu": "Nhựa Polyurethane (PU)",
+        "Kích thước lỗ vít": "M8",
+        "Tính năng": "Khoá di chuyển"
+      },
+      "warranty": "6 tháng"
     },
     {
       "id": 202,
@@ -699,7 +1062,15 @@
           ],
           "quantity": 5
         }
-      ]
+      ],
+      "specImage": "/assets/specs/cabletray.png",
+      "specs": {
+        "Kích thước": "500 × 120 × 100 mm (DxRxC)",
+        "Tải trọng": "10 kg",
+        "Chất liệu": "Thép sơn tĩnh điện",
+        "Màu sắc": "Trắng / Đen"
+      },
+      "warranty": "6 tháng"
     },
     {
       "id": 203,
@@ -745,7 +1116,24 @@
           ],
           "quantity": 2
         }
-      ]
+      ],
+      "specs": {
+        "Kiểu tay nâng": "Đơn (có bản Đôi tuỳ chọn)",
+        "Màu sắc": "All Black, Pure White",
+        "Chất liệu": "Hợp kim nhôm đúc sơn tĩnh điện",
+        "Trọng lượng tay đơn": "1,9 kg",
+        "Trọng lượng tay đôi": "3,6 kg",
+        "Độ vươn tối đa": "532 mm",
+        "Góc xoay dọc": "-180° ~ +180°",
+        "Góc xoay ngang": "-90° ~ +90°",
+        "Góc lật màn hình": "-45° ~ +90°",
+        "Kích cỡ màn hình phù hợp": "13″ – 30″",
+        "Trọng lượng màn hình": "2 kg – 9 kg",
+        "Độ dày mặt bàn": "10 mm – 62 mm",
+        "VESA": "MIS-D 75×75 / 100×100",
+        "Cơ chế tay nâng": "Piston"
+      },
+      "warranty": "1 năm"
     },
     {
       "id": 204,
@@ -756,10 +1144,20 @@
       "images": [
         "/assets/images/accessories/CPUHolder/gia-do-may-tinh-gan-ban-epione-cpuholder-574633.webp",
         "/assets/images/accessories/CPUHolder/gia-do-may-tinh-gan-ban-epione-cpuholder-385344.webp",
-        "/assets/images/accessories/CPUHolder/ggia-do-may-tinh-gan-ban-epione-cpuholder-958445.webp"
+        "/assets/images/accessories/CPUHolder/gia-do-may-tinh-gan-ban-epione-cpuholder-958445.webp"
       ],
       "rating": 0,
-      "quantity": 0
+      "quantity": 0,
+      "specs": {
+        "Chất liệu": "Nhựa, Thép",
+        "Màu sắc": "All Black",
+        "Tải trọng": "12 kg",
+        "Độ cao điều chỉnh": "340 – 550 mm",
+        "Độ sâu điều chỉnh": "152 – 247 mm (6″ – 9,7″)",
+        "Phạm vi xoay": "+180° ~ -180°",
+        "Lắp đặt": "Dưới bàn"
+      },
+      "warranty": "6 tháng"
     },
     {
       "id": 205,
@@ -777,7 +1175,23 @@
           ],
           "quantity": 10
         }
-      ]
+      ],
+      "specs": {
+        "Chất liệu": "Hợp kim nhôm đúc sơn tĩnh điện",
+        "Trọng lượng tay đơn": "2,9 kg",
+        "Độ vươn tối đa": "485 mm",
+        "Góc xoay dọc": "-180° ~ +180°",
+        "Góc xoay ngang": "-90° ~ +90°",
+        "Góc lật màn hình": "-20° ~ +60°",
+        "Kích cỡ màn hình phù hợp": "24″ – 57″",
+        "Trọng lượng màn hình phẳng": "2 kg – 27 kg",
+        "Trọng lượng màn hình cong": "2 kg – 22 kg",
+        "Độ dày mặt bàn": "10 mm – 45 mm",
+        "VESA": "75×75, 100×100, 200×200",
+        "Cơ chế tay nâng": "Piston",
+        "Cổng kết nối": "1 × USB-A 3.0, 1 × USB-C 3.0"
+      },
+      "warranty": "6 tháng"
     },
     {
       "id": 206,
@@ -823,7 +1237,14 @@
           ],
           "quantity": 2
         }
-      ]
+      ],
+      "specs": {
+        "Kích thước": "800 | 1170 × 230 × 100 mm (DxRxC)",
+        "Màu sắc": "Walnut, Ash",
+        "Chất liệu": "Gỗ MFC + Nhôm",
+        "Tải trọng": "45 kg"
+      },
+      "warranty": "6 tháng"
     },
     {
       "id": 207,
@@ -864,7 +1285,15 @@
         "/assets/images/accessories/EssentialsCabinetW400/tu-van-phong-epione-essentials-lip-edge-cabinet-w400-139463.webp"
       ],
       "rating": 0,
-      "quantity": 10
+      "quantity": 10,
+      "specs": {
+        "Kích thước": "Cao 600 mm • Rộng 400 mm • Sâu 500 mm",
+        "Đường kính bánh xe": "50 mm",
+        "Chất liệu": "Ván MFC chuẩn E1",
+        "Số ngăn kéo": "3",
+        "Tính năng": "Khoá di chuyển, khoá 3 ngăn cùng lúc"
+      },
+      "warranty": "1 năm"
     },
     {
       "id": 210,
@@ -891,9 +1320,7 @@
           "style": "EasyChair",
           "name_variant": "Kê chân ghế cho EasyChair",
           "price": 1120000,
-          "images": [
-            "/assets/images/accessories/ke-chan-ghe-500097.webp"
-          ],
+          "images": ["/assets/images/accessories/ke-chan-ghe-500097.webp"],
           "quantity": 5
         },
         {
@@ -931,7 +1358,16 @@
           ],
           "quantity": 5
         }
-      ]
+      ],
+      "specs": {
+        "Chiều cao": "108 cm (3 tầng) / 173 cm (5 tầng)",
+        "Chiều dài": "80 cm",
+        "Chiều rộng": "29 cm",
+        "Tải trọng": "15 kg mỗi ngăn (tải đều)",
+        "Chứng nhận gỗ": "Tiêu chuẩn E1",
+        "Bảo hành": "6 tháng"
+      },
+      "warranty": "1 năm"
     },
     {
       "id": 213,
@@ -945,7 +1381,15 @@
         "/assets/images/accessories/CabinetW350/tu-epione-essential-cabinet-w350-squint-2.webp"
       ],
       "rating": 0,
-      "quantity": 10
+      "quantity": 10,
+      "specs": {
+        "Kích thước": "Cao 500 mm • Rộng 350 mm • Sâu 500 mm",
+        "Đường kính bánh xe": "50 mm",
+        "Chất liệu": "Ván MFC chuẩn E1",
+        "Số ngăn kéo": "2",
+        "Tính năng": "Khoá di chuyển, khoá 2 ngăn cùng lúc"
+      },
+      "warranty": "1 năm"
     }
   ]
 }
