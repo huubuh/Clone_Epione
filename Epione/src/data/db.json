@@ -37,6 +37,8 @@
       "name": "Ghế công thái học Epione FortisChair",
       "price": 3890000,
       "image": "/assets/images/chair/FortisChair/ghe-cong-thai-hoc-epione-fortischair-293838.webp",
+      "category": "chairs",
+
       "images": [
         "/assets/images/chair/FortisChair/ghe-cong-thai-hoc-epione-fortischair-293838.webp",
         "/assets/images/chair/FortisChair/ghe-cong-thai-hoc-epione-fortischair-484427.webp",
@@ -92,6 +94,7 @@
       "image": "/assets/images/chair/ElysChair/ghe-cong-thai-hoc-epione-elyschair-125084.webp",
       "rating": 5,
       "warranty": "2 năm",
+      "category": "chairs",
       "variants": [
         {
           "style": "không kê đầu",
@@ -180,6 +183,7 @@
       "image": "/assets/images/chair/EasyChair20/ghe-cong-thai-hoc-epione-easychair-20-582610.webp",
       "rating": 5,
       "warranty": "2 năm",
+      "category": "chairs",
       "variants": [
         {
           "color": "All Black",
@@ -251,6 +255,7 @@
       "image": "/assets/images/chair/FortisChair20/ghe-cong-thai-hoc-epione-fortischair-2-black-pro-front.webp",
       "rating": 5,
       "warranty": "2 năm",
+      "category": "chairs",
       "variants": [
         {
           "version": "bản thường",
@@ -339,6 +344,7 @@
     },
     {
       "id": "5",
+      "category": "chairs",
       "slug": "aliuschair",
       "name": "Ghế công thái học Epione AliusChair",
       "price": 13990000,
@@ -420,6 +426,7 @@
       "image": "/assets/images/desk/SmartDeskMono/epione-smartdesk-mono-white-corner.webp",
       "rating": 5,
       "warranty": "2 năm cho khung và các bộ phận máy",
+      "category": "desks",
       "variants": [
         {
           "size": "1.2m x 0.6m",
@@ -503,6 +510,7 @@
       "image": "/assets/images/desk/SmartDeskLite20/smartdesk-lite-2.0-corner-white.webp",
       "rating": 5,
       "warranty": "3 năm cho khung và các bộ phận máy",
+      "category": "desks",
       "variants": [
         {
           "size": "1.2m x 0.6m",
@@ -652,6 +660,7 @@
       "image": "/assets/images/desk/SmartDeskPro20/smartdesk-pro-2.0-corner-white.webp",
       "rating": 4,
       "warranty": "5 năm cho khung và các bộ phận máy",
+      "category": "desks",
       "variants": [
         {
           "size": "1.2m x 0.6m",
@@ -802,6 +811,7 @@
       "image": "/assets/images/desk/DelightDesk/7-ban-nang-ha-epione-delightdesk-side-right-oak.webp",
       "rating": 4,
       "warranty": "5 năm cho khung và các bộ phận máy",
+      "category": "desks",
       "variants": [
         {
           "size": "1.5m x 0.7m",
@@ -997,6 +1007,7 @@
       "image": "/assets/images/desk/Khung/khung-ban-nang-ha-epione-smartdesk-904753.webp",
       "rating": 0,
       "warranty": "5 năm cho khung và các bộ phận máy",
+      "category": "desks",
       "variants": [
         {
           "style": "SmartDesk Lite 2.0",
@@ -1040,7 +1051,8 @@
         "Kích thước lỗ vít": "M8",
         "Tính năng": "Khoá di chuyển"
       },
-      "warranty": "6 tháng"
+      "warranty": "6 tháng",
+      "category": "accessories"
     },
     {
       "id": "202",
@@ -1080,7 +1092,8 @@
         "Chất liệu": "Thép sơn tĩnh điện",
         "Màu sắc": "Trắng / Đen"
       },
-      "warranty": "6 tháng"
+      "warranty": "6 tháng",
+        "category": "accessories"
     },
     {
       "id": "203",
@@ -1143,7 +1156,8 @@
         "VESA": "MIS-D 75×75 / 100×100",
         "Cơ chế tay nâng": "Piston"
       },
-      "warranty": "1 năm"
+      "warranty": "1 năm",
+        "category": "accessories"
     },
     {
       "id": "204",
@@ -1167,7 +1181,8 @@
         "Phạm vi xoay": "+180° ~ -180°",
         "Lắp đặt": "Dưới bàn"
       },
-      "warranty": "6 tháng"
+      "warranty": "6 tháng",
+        "category": "accessories"
     },
     {
       "id": "205",
@@ -1201,7 +1216,8 @@
         "Cơ chế tay nâng": "Piston",
         "Cổng kết nối": "1 × USB-A 3.0, 1 × USB-C 3.0"
       },
-      "warranty": "6 tháng"
+      "warranty": "6 tháng",
+        "category": "accessories"
     },
     {
       "id": "206",
@@ -1254,7 +1270,8 @@
         "Chất liệu": "Gỗ MFC + Nhôm",
         "Tải trọng": "45 kg"
       },
-      "warranty": "6 tháng"
+      "warranty": "6 tháng",
+        "category": "accessories"
     },
     {
       "id": "207",
@@ -1303,7 +1320,8 @@
         "Số ngăn kéo": "3",
         "Tính năng": "Khoá di chuyển, khoá 3 ngăn cùng lúc"
       },
-      "warranty": "1 năm"
+      "warranty": "1 năm",
+        "category": "accessories"
     },
     {
       "id": "210",
@@ -1379,7 +1397,8 @@
         "Chứng nhận gỗ": "Tiêu chuẩn E1",
         "Bảo hành": "6 tháng"
       },
-      "warranty": "1 năm"
+      "warranty": "1 năm",
+        "category": "accessories"
     },
     {
       "id": "213",
@@ -1401,7 +1420,8 @@
         "Số ngăn kéo": "2",
         "Tính năng": "Khoá di chuyển, khoá 2 ngăn cùng lúc"
       },
-      "warranty": "1 năm"
+      "warranty": "1 năm",
+        "category": "accessories"
     }
   ]
 }

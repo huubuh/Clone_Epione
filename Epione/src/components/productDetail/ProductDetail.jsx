@@ -54,16 +54,8 @@ const ProductDetail = () => {
 
         if (data) {
           setProduct(data);
-
-          const productId = data.id;
-          if (productId >= 1 && productId < 100) {
-            setCategory("chairs");
-          } else if (productId >= 100 && productId < 200) {
-            setCategory("desks");
-          } else {
-            setCategory("accessories");
-          }
-
+          console.log(data);
+          setCategory(data.category);
           const firstVariant = data.variants?.[0];
           if (firstVariant) {
             if (firstVariant.size) {
